@@ -21,9 +21,16 @@
 
 <header class="page-header">
 
+    <button id="menuBtn"
+            class="page-menu-btn"
+            type="button">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
     <a href="../../index.html"
-       class="home-btn"
-       aria-label="홈으로 이동">
+       class="home-btn">
 
         <i class="fa-solid fa-house"></i>
 
@@ -32,6 +39,198 @@
     <h1>무기판매</h1>
 
 </header>
+<nav id="sidebar">
+
+    <ul>
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+                <i class="fa-solid fa-coins"></i>
+                재화획득
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/재화획득/farming.html">농사</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/cafe.html">카페</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/explore.html">탐험</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/lottery.html">복권</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/loot.html">전리품</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/checkin.html">출석체크</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+                <i class="fa-solid fa-dice"></i>
+                도박
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/도박/fishing.html">낚시</a>
+                </li>
+
+                <li>
+                    <a href="/pages/도박/pubg.html">배그</a>
+                </li>
+
+                <li>
+                    <a href="/pages/도박/lotto.html">로또</a>
+                </li>
+
+                <li>
+                    <a href="/pages/도박/rps.html">가위바위보</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+                <i class="fa-solid fa-hammer"></i>
+                강화
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/강화/upgrade.html">강화 확률</a>
+                </li>
+
+                <li>
+                    <a href="/pages/강화/attack.html">공격</a>
+                </li>
+
+                <li>
+                    <a href="/pages/강화/weapon-sale.html">무기판매</a>
+                </li>
+
+                <li>
+                    <a href="/pages/강화/engraving.html">별의 각인</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+                <i class="fa-solid fa-paw"></i>
+                펫
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/펫/summon.html">펫 뽑기</a>
+                </li>
+
+                <li>
+                    <a href="/pages/펫/petLevel.html">펫 레벨업</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+                <i class="fa-solid fa-cart-shopping"></i>
+                상점
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/상점/shop.html">상점</a>
+                </li>
+
+                <li>
+                    <a href="/pages/상점/petshop.html">펫 상점</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+                <i class="fa-solid fa-briefcase"></i>
+                가방
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/가방/mysterybox.html">물음표박스</a>
+                </li>
+
+                <li>
+                    <a href="/pages/가방/items.html">기타 아이템</a>
+                </li>
+
+                <li>
+                    <a href="/pages/가방/bundle.html">밍꾸러미</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+                <i class="fa-solid fa-puzzle-piece"></i>
+                기타 명령어
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/기타명령어/bankruptcy.html">파산신청</a>
+                </li>
+
+                <li>
+                    <a href="/pages/기타명령어/exp.html">경험치</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+    </ul>
+
+</nav>
+
+<div id="overlay"></div>
 
 <main class="page-content weapon-sale-page">
 
@@ -222,7 +421,7 @@
     </section>
 
 </main>
-
+<script src="../../script.js"></script>
 <script src="weapon-sale.js"></script>
 
 </body>
