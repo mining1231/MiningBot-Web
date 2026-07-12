@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>파산신청</title>
+
+    <link rel="stylesheet" href="../../style.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="page-header">
+
+    <a href="../../index.html"
+       class="home-btn"
+       aria-label="홈으로 이동">
+
+        <i class="fa-solid fa-house"></i>
+
+    </a>
+
+    <h1>파산신청</h1>
+
+</header>
+
+<main class="page-content bankruptcy-page">
+
+    <section class="intro bankruptcy-intro">
+
+        <h2>파산신청이란?</h2>
+
+        <p>
+            <code>/파산신청</code> 명령어를 통해
+            현재 보유 금액이 마이너스일 때 빚 탕감에 도전할 수 있습니다.
+        </p>
+
+        <p>
+            신청 결과에 따라 빚이 전액 또는 절반 탕감될 수 있지만,
+            탕감이 거절될 가능성도 있습니다.
+            과연 미닝봇이 당신의 빚을 얼마나 줄여줄까요? 💸
+        </p>
+
+        <div class="bankruptcy-condition">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <span>
+                파산신청은 잔액이 마이너스인 경우에만 이용할 수 있습니다.
+            </span>
+
+        </div>
+
+    </section>
+
+    <section class="level-card bankruptcy-card">
+
+        <div class="bankruptcy-section-title">
+
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+
+            파산신청 결과 확률
+
+        </div>
+
+        <div class="bankruptcy-result-grid">
+
+            <article class="bankruptcy-result-card full">
+
+                <div class="bankruptcy-result-icon">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                </div>
+
+                <h3>전액 탕감</h3>
+
+                <p>
+                    현재 보유 중인 빚이 모두 사라집니다.
+                </p>
+
+                <strong>15%</strong>
+
+            </article>
+
+            <article class="bankruptcy-result-card half">
+
+                <div class="bankruptcy-result-icon">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+
+                <h3>절반 탕감</h3>
+
+                <p>
+                    현재 빚의 절반이 줄어듭니다.
+                </p>
+
+                <strong>70%</strong>
+
+            </article>
+
+            <article class="bankruptcy-result-card reject">
+
+                <div class="bankruptcy-result-icon">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+
+                <h3>탕감 거절</h3>
+
+                <p>
+                    빚이 줄어들지 않고 그대로 유지됩니다.
+                </p>
+
+                <strong>15%</strong>
+
+            </article>
+
+        </div>
+
+        <div class="bankruptcy-warning">
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <span>
+                결과는 확률에 따라 결정되며,
+                신청 후 결과를 되돌릴 수 없습니다.
+            </span>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

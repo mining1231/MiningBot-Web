@@ -6756,3 +6756,235 @@ body:has(.explore-card) .intro h2{
     }
 
 }
+/* ==========================
+   파산신청 페이지
+========================== */
+
+.bankruptcy-intro h2{
+    color:#c56d92;
+}
+
+.bankruptcy-condition{
+    display:flex;
+    align-items:flex-start;
+
+    gap:10px;
+
+    margin-top:20px;
+
+    padding:14px 16px;
+
+    color:#5d7488;
+
+    background:#f4f9ff;
+
+    border:1px solid #d2e4f4;
+
+    border-radius:14px;
+
+    font-size:14px;
+    line-height:1.65;
+}
+
+.bankruptcy-condition i{
+    margin-top:4px;
+
+    color:#6b98bd;
+
+    flex-shrink:0;
+}
+
+.bankruptcy-card{
+    max-width:860px;
+
+    margin:40px auto;
+
+    padding:30px 36px;
+
+    background:#ffffff;
+
+    box-shadow:0 10px 30px rgba(197,109,146,.12);
+}
+
+.bankruptcy-section-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:10px;
+
+    margin-bottom:28px;
+
+    color:#c56d92;
+
+    font-size:30px;
+    font-weight:700;
+}
+
+.bankruptcy-result-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:16px;
+}
+
+.bankruptcy-result-card{
+    padding:24px 18px;
+
+    text-align:center;
+
+    border:2px solid transparent;
+
+    border-radius:20px;
+
+    box-shadow:0 7px 20px rgba(0,0,0,.06);
+
+    transition:all .25s ease;
+}
+
+.bankruptcy-result-card:hover{
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 26px rgba(0,0,0,.10);
+}
+
+.bankruptcy-result-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:58px;
+    height:58px;
+
+    margin:0 auto 14px;
+
+    border-radius:50%;
+
+    font-size:23px;
+}
+
+.bankruptcy-result-card h3{
+    margin:0 0 10px;
+
+    font-size:21px;
+    font-weight:700;
+}
+
+.bankruptcy-result-card p{
+    min-height:46px;
+
+    margin:0 0 18px;
+
+    color:#777;
+
+    font-size:13px;
+    line-height:1.55;
+}
+
+.bankruptcy-result-card strong{
+    font-size:25px;
+    font-weight:700;
+}
+
+/* 전액 탕감 */
+
+.bankruptcy-result-card.full{
+    background:#f5fff7;
+
+    border-color:#bce8c5;
+}
+
+.bankruptcy-result-card.full .bankruptcy-result-icon{
+    color:#3f9a55;
+
+    background:#e2f8e7;
+}
+
+.bankruptcy-result-card.full h3,
+.bankruptcy-result-card.full strong{
+    color:#3f9a55;
+}
+
+/* 절반 탕감 */
+
+.bankruptcy-result-card.half{
+    background:#fffdf5;
+
+    border-color:#eadb9d;
+}
+
+.bankruptcy-result-card.half .bankruptcy-result-icon{
+    color:#a77d16;
+
+    background:#fff5cc;
+}
+
+.bankruptcy-result-card.half h3,
+.bankruptcy-result-card.half strong{
+    color:#a77d16;
+}
+
+/* 거절 */
+
+.bankruptcy-result-card.reject{
+    background:#fff7f8;
+
+    border-color:#efc0ca;
+}
+
+.bankruptcy-result-card.reject .bankruptcy-result-icon{
+    color:#c05f78;
+
+    background:#fde6eb;
+}
+
+.bankruptcy-result-card.reject h3,
+.bankruptcy-result-card.reject strong{
+    color:#c05f78;
+}
+
+.bankruptcy-warning{
+    display:flex;
+    align-items:flex-start;
+
+    gap:10px;
+
+    margin-top:22px;
+
+    padding:14px 16px;
+
+    color:#926b51;
+
+    background:#fff8f4;
+
+    border:1px solid #efd8c8;
+
+    border-radius:14px;
+
+    font-size:14px;
+    line-height:1.65;
+}
+
+.bankruptcy-warning i{
+    margin-top:4px;
+
+    color:#c58455;
+
+    flex-shrink:0;
+}
+
+@media(max-width:768px){
+
+    .bankruptcy-card{
+        padding:24px 18px;
+    }
+
+    .bankruptcy-result-grid{
+        grid-template-columns:1fr;
+    }
+
+    .bankruptcy-section-title{
+        font-size:26px;
+    }
+
+}
