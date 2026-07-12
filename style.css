@@ -7297,10 +7297,9 @@ body:has(.explore-card) .intro h2{
 
 }
 /* ==========================
-   상세 페이지 사이드바 위치/스크롤 수정
+   상세 페이지 사이드바 위치 및 스크롤
 ========================== */
 
-/* 상세 페이지 헤더 높이를 정확히 고정 */
 .page-header{
     height:84px;
     min-height:84px;
@@ -7310,31 +7309,35 @@ body:has(.explore-card) .intro h2{
     box-sizing:border-box;
 }
 
-/* 상세 페이지에서는 헤더 바로 아래부터 사이드바 시작 */
+/* 상세 페이지 사이드바 */
 .page-header + #sidebar{
     top:84px;
 
-    height:calc(100vh - 84px);
+    height:calc(100dvh - 84px);
 
     overflow-y:auto;
     overflow-x:hidden;
 
     overscroll-behavior:contain;
+
+    box-sizing:border-box;
 }
 
-/* 사이드바 마지막 메뉴가 잘리지 않도록 여백 추가 */
+/* 첫 메뉴가 위에 붙지 않도록 여백 */
 .page-header + #sidebar > ul{
-    padding-bottom:40px;
+    margin:0;
+
+    padding:14px 0 50px;
 }
 
-/* 어두운 배경도 헤더 아래부터 시작 */
+/* 어두운 배경 */
 .page-header ~ #overlay{
     top:84px;
 
-    height:calc(100vh - 84px);
+    height:calc(100dvh - 84px);
 }
 
-/* 사이드바 스크롤바 */
+/* 스크롤바 */
 .page-header + #sidebar{
     scrollbar-width:thin;
     scrollbar-color:#f2a9bf #ffe4ec;
@@ -7368,13 +7371,13 @@ body:has(.explore-card) .intro h2{
     .page-header + #sidebar{
         top:72px;
 
-        height:calc(100vh - 72px);
+        height:calc(100dvh - 72px);
     }
 
     .page-header ~ #overlay{
         top:72px;
 
-        height:calc(100vh - 72px);
+        height:calc(100dvh - 72px);
     }
 
 }
