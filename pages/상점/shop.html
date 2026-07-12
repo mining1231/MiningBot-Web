@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>상점</title>
+
+    <link rel="stylesheet" href="../../style.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="page-header">
+
+    <a href="../../index.html"
+       class="home-btn"
+       aria-label="홈으로 이동">
+
+        <i class="fa-solid fa-house"></i>
+
+    </a>
+
+    <h1>상점</h1>
+
+</header>
+
+<main class="page-content shop-page">
+
+    <section class="intro shop-intro">
+
+        <h2>상점이란?</h2>
+
+        <p>
+            <code>/상점</code> 명령어를 통해 다양한 상품을 구매할 수 있습니다.
+        </p>
+
+        <p>
+            원하는 상품을 선택하면 즉시 구매되므로,
+            구매 전 상품명과 가격을 꼭 확인해 주세요.
+            미닝봇이 준비한 다양한 상품을 둘러보고 필요한 아이템을 구매해 보세요! 🛒
+        </p>
+
+        <div class="shop-notice">
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <span>
+                상품 선택 시 바로 구매되므로 신중하게 선택해 주세요.
+            </span>
+
+        </div>
+
+    </section>
+
+    <section class="level-card shop-preview-card">
+
+        <div class="shop-section-title">
+
+            <i class="fa-solid fa-image"></i>
+
+            실제 사용 화면
+
+        </div>
+
+        <div class="shop-preview">
+
+            <img
+                src="../../images/shop_preview.png"
+                alt="미닝봇 상점 명령어 사용 화면"
+            >
+
+            <p class="preview-caption">
+                실제 미닝봇 상점 명령어 화면입니다.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="level-card shop-list-card">
+
+        <div class="shop-section-title">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            상품 목록
+
+        </div>
+
+        <div class="shop-product-list">
+
+            <!-- 미스터리 박스 -->
+
+            <article class="shop-product-card mystery-product">
+
+                <div class="shop-product-header">
+
+                    <div class="shop-product-icon">
+
+                        <img
+                            src="../../images/mystery_box.png"
+                            alt="물음표 박스"
+                        >
+
+                    </div>
+
+                    <div class="shop-product-heading">
+
+                        <h3>물음표 박스</h3>
+
+                        <p>
+                            다양한 아이템과 재화를 무작위로 획득할 수 있는 특별한 상자입니다.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="shop-product-info-grid">
+
+                    <div class="shop-product-info">
+
+                        <span>가격</span>
+
+                        <strong>5,000,000원</strong>
+
+                    </div>
+
+                    <div class="shop-product-info">
+
+                        <span>구매 제한</span>
+
+                        <strong>하루 2개</strong>
+
+                    </div>
+
+                    <div class="shop-product-info">
+
+                        <span>보유 제한</span>
+
+                        <strong>최대 8개</strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- 무기 -->
+
+            <article class="shop-product-card weapon-product">
+
+                <div class="shop-product-header">
+
+                    <div class="shop-product-icon font-icon">
+
+                        <i class="fa-solid fa-hammer"></i>
+
+                    </div>
+
+                    <div class="shop-product-heading">
+
+                        <h3>무기</h3>
+
+                        <p>
+                            무기 레벨에 따라 구매 가격이 달라집니다.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="shop-option-list">
+
+                    <div class="shop-option-row">
+
+                        <div>
+                            <span class="shop-level">Lv.10</span>
+                            <strong>비파형 동검</strong>
+                        </div>
+
+                        <b>1,500,000원</b>
+
+                    </div>
+
+                    <div class="shop-option-row">
+
+                        <div>
+                            <span class="shop-level">Lv.20</span>
+                            <strong>갈퀴</strong>
+                        </div>
+
+                        <b>30,000,000원</b>
+
+                    </div>
+
+                    <div class="shop-option-row">
+
+                        <div>
+                            <span class="shop-level">Lv.30</span>
+                            <strong>룽소드</strong>
+                        </div>
+
+                        <b>400,000,000원</b>
+
+                    </div>
+
+                </div>
+
+                <div class="shop-product-warning">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <span>
+                        보유한 무기 레벨이 더 높거나 같으면 해당 무기를 구매할 수 없습니다.
+                    </span>
+
+                </div>
+
+            </article>
+
+            <!-- 각인석 -->
+
+            <article class="shop-product-card engrave-product">
+
+                <div class="shop-product-header">
+
+                    <div class="shop-product-icon font-icon">
+
+                        <i class="fa-solid fa-gem"></i>
+
+                    </div>
+
+                    <div class="shop-product-heading">
+
+                        <h3>각인석</h3>
+
+                        <p>
+                            별의 각인에 필요한 재료입니다. 필요한 수량에 맞게 구매해 보세요.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="shop-option-list">
+
+                    <div class="shop-option-row">
+
+                        <strong>각인석 1개</strong>
+
+                        <b>100,000,000원</b>
+
+                    </div>
+
+                    <div class="shop-option-row">
+
+                        <strong>각인석 50개 묶음</strong>
+
+                        <b>4,700,000,000원</b>
+
+                    </div>
+
+                    <div class="shop-option-row featured">
+
+                        <strong>각인석 100개 묶음</strong>
+
+                        <b>8,500,000,000원</b>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

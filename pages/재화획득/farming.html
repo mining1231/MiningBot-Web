@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>농사</title>
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css">
+</head>
+
+<body>
+
+<header class="page-header">
+
+    <a href="../../index.html" class="home-btn" aria-label="홈으로 이동">
+        <i class="fa-solid fa-house"></i>
+    </a>
+
+    <h1>농사</h1>
+
+</header>
+
+<main class="page-content">
+
+    <section class="intro">
+
+        <h2>농사란?</h2>
+
+        <p>
+            <code>/농사</code> 명령어를 통해 이용할 수 있습니다.
+        </p>
+
+        <p>
+            미닝봇의 농사를 도와 다양한 작물을 수확해 보세요!
+        </p>
+
+        <p>
+            농사 레벨이 높아질수록 희귀한 작물을 획득할 확률이 증가합니다.
+            열심히 농사를 지어 최고의 작물 수확에 도전해 보세요. 🌱
+        </p>
+
+        <ul>
+            <li>하루 30회 이용 가능</li>
+            <li>쿨타임 30초</li>
+        </ul>
+
+    </section>
+
+    <section class="level-buttons">
+
+        <button class="level-btn" data-level="1">Lv.1</button>
+        <button class="level-btn" data-level="2">Lv.2</button>
+        <button class="level-btn" data-level="3">Lv.3</button>
+        <button class="level-btn" data-level="4">Lv.4</button>
+        <button class="level-btn" data-level="5">Lv.5</button>
+        <button class="level-btn" data-level="6">Lv.6</button>
+        <button class="level-btn" data-level="7">Lv.7</button>
+        <button class="level-btn" data-level="8">Lv.8</button>
+        <button class="level-btn" data-level="9">Lv.9</button>
+        <button class="level-btn" data-level="10">Lv.10</button>
+
+    </section>
+
+<section id="levelInfo" class="level-card">
+
+    <div class="farm-level-title">
+        🌱 Lv.1
+    </div>
+
+    <div class="farm-top-info">
+
+        <div class="farm-stat">
+            <span>성공 확률</span>
+            <strong id="successRate">70%</strong>
+        </div>
+
+        <div class="farm-stat">
+            <span>실패 확률</span>
+            <strong id="failRate">30%</strong>
+        </div>
+
+        <div class="farm-stat exp">
+            <span>획득 경험치</span>
+            <strong id="expValue">100</strong>
+        </div>
+
+    </div>
+
+    <div class="drop-title">
+        🌾 작물 획득 확률
+    </div>
+
+    <div id="dropList">
+
+    </div>
+
+</section>
+
+</main>
+
+<script src="farming.js"></script>
+
+</body>
+</html>
