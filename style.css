@@ -7296,3 +7296,85 @@ body:has(.explore-card) .intro h2{
     }
 
 }
+/* ==========================
+   상세 페이지 사이드바 위치/스크롤 수정
+========================== */
+
+/* 상세 페이지 헤더 높이를 정확히 고정 */
+.page-header{
+    height:84px;
+    min-height:84px;
+
+    padding:0 30px;
+
+    box-sizing:border-box;
+}
+
+/* 상세 페이지에서는 헤더 바로 아래부터 사이드바 시작 */
+.page-header + #sidebar{
+    top:84px;
+
+    height:calc(100vh - 84px);
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    overscroll-behavior:contain;
+}
+
+/* 사이드바 마지막 메뉴가 잘리지 않도록 여백 추가 */
+.page-header + #sidebar > ul{
+    padding-bottom:40px;
+}
+
+/* 어두운 배경도 헤더 아래부터 시작 */
+.page-header ~ #overlay{
+    top:84px;
+
+    height:calc(100vh - 84px);
+}
+
+/* 사이드바 스크롤바 */
+.page-header + #sidebar{
+    scrollbar-width:thin;
+    scrollbar-color:#f2a9bf #ffe4ec;
+}
+
+.page-header + #sidebar::-webkit-scrollbar{
+    width:8px;
+}
+
+.page-header + #sidebar::-webkit-scrollbar-track{
+    background:#ffe4ec;
+}
+
+.page-header + #sidebar::-webkit-scrollbar-thumb{
+    background:#f2a9bf;
+
+    border:2px solid #ffe4ec;
+    border-radius:20px;
+}
+
+/* 모바일 */
+@media(max-width:600px){
+
+    .page-header{
+        height:72px;
+        min-height:72px;
+
+        padding:0 14px;
+    }
+
+    .page-header + #sidebar{
+        top:72px;
+
+        height:calc(100vh - 72px);
+    }
+
+    .page-header ~ #overlay{
+        top:72px;
+
+        height:calc(100vh - 72px);
+    }
+
+}
