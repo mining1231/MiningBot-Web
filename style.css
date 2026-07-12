@@ -7200,3 +7200,99 @@ body:has(.explore-card) .intro h2{
     }
 
 }
+/* ==========================
+   상세 페이지 공통 헤더 메뉴
+========================== */
+
+.page-header{
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:56px;
+
+    padding:18px 30px;
+}
+
+.page-header h1{
+    margin:0;
+
+    text-align:center;
+}
+
+.page-menu-btn{
+    position:absolute;
+
+    left:24px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:48px;
+    height:48px;
+
+    padding:0;
+
+    color:#5a4037;
+    background:#ffffff;
+
+    border:none;
+    border-radius:50%;
+
+    font-size:20px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.10);
+
+    cursor:pointer;
+
+    transition:all .2s ease;
+}
+
+.page-header .home-btn{
+    position:absolute;
+
+    left:84px;
+
+    width:48px;
+    height:48px;
+}
+
+.page-menu-btn:hover,
+.page-header .home-btn:hover{
+    background:#ffe8f0;
+
+    transform:translateY(-2px);
+}
+
+@media(max-width:600px){
+
+    .page-header{
+        padding:16px 20px;
+    }
+
+    .page-menu-btn{
+        left:14px;
+
+        width:42px;
+        height:42px;
+
+        font-size:18px;
+    }
+
+    .page-header .home-btn{
+        left:64px;
+
+        width:42px;
+        height:42px;
+
+        font-size:17px;
+    }
+
+    .page-header h1{
+        font-size:26px;
+    }
+
+}
