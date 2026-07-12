@@ -5390,3 +5390,466 @@ body:has(.explore-card) .intro h2{
     }
 
 }
+/* ==========================
+   공격 페이지
+========================== */
+
+.attack-intro h2{
+    color:#c55f68;
+}
+
+.attack-summary-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+    margin-top:24px;
+}
+
+.attack-summary-card{
+    padding:20px 14px;
+
+    text-align:center;
+
+    background:#fff8f8;
+
+    border:2px solid #f0ced1;
+
+    border-radius:18px;
+
+    box-shadow:0 6px 18px rgba(197,95,104,.09);
+}
+
+.attack-summary-card span{
+    display:block;
+
+    margin-bottom:9px;
+
+    color:#8d8081;
+
+    font-size:13px;
+}
+
+.attack-summary-card strong{
+    color:#bd5963;
+
+    font-size:17px;
+    font-weight:700;
+}
+
+.durability-card,
+.attack-card{
+    max-width:860px;
+
+    margin:40px auto;
+
+    padding:30px 36px;
+
+    background:#ffffff;
+
+    box-shadow:0 10px 30px rgba(197,95,104,.12);
+}
+
+.attack-section-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:10px;
+
+    margin-bottom:26px;
+
+    color:#bd5963;
+
+    font-size:30px;
+    font-weight:700;
+}
+
+.durability-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+}
+
+.durability-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:15px;
+
+    padding:15px 18px;
+
+    background:#fffafb;
+
+    border:1px solid #efd9dc;
+
+    border-radius:15px;
+}
+
+.durability-row span{
+    color:#5a4037;
+
+    font-weight:700;
+}
+
+.durability-row strong{
+    color:#bd5963;
+
+    font-size:15px;
+}
+
+.durability-row.final{
+    background:linear-gradient(
+        135deg,
+        #fff5e2,
+        #fffdf6
+    );
+
+    border-color:#ead18a;
+}
+
+.durability-row.final span,
+.durability-row.final strong{
+    color:#98701c;
+}
+
+.attack-danger-box{
+    display:flex;
+    align-items:flex-start;
+
+    gap:10px;
+
+    margin-top:20px;
+
+    padding:14px 16px;
+
+    color:#906552;
+
+    background:#fff7f2;
+
+    border:1px solid #edd5c5;
+
+    border-radius:14px;
+
+    font-size:14px;
+    line-height:1.65;
+}
+
+.attack-danger-box i{
+    margin-top:4px;
+
+    color:#c57a55;
+
+    flex-shrink:0;
+}
+
+.attack-range-buttons{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+
+    gap:10px;
+
+    margin-bottom:25px;
+}
+
+.attack-range-btn{
+    padding:13px 9px;
+
+    color:#bd5963;
+
+    background:#ffffff;
+
+    border:2px solid #efd1d4;
+
+    border-radius:15px;
+
+    font-family:inherit;
+    font-size:14px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:all .22s ease;
+}
+
+.attack-range-btn:hover{
+    transform:translateY(-2px);
+
+    background:#fff5f6;
+
+    border-color:#dfaeb3;
+}
+
+.attack-range-btn.active{
+    color:#ffffff;
+
+    background:#c55f68;
+
+    border-color:#c55f68;
+
+    box-shadow:0 7px 17px rgba(197,95,104,.24);
+}
+
+.attack-select-box{
+    padding:20px;
+
+    margin-bottom:24px;
+
+    background:#fff9fa;
+
+    border:1px solid #efd9dc;
+
+    border-radius:18px;
+}
+
+.attack-select-box label{
+    display:flex;
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:11px;
+
+    color:#704d51;
+
+    font-size:16px;
+    font-weight:700;
+}
+
+.attack-select-box label i{
+    color:#c55f68;
+}
+
+.attack-select-box select{
+    width:100%;
+
+    padding:14px 16px;
+
+    color:#554648;
+
+    background:#ffffff;
+
+    border:2px solid #ebced2;
+
+    border-radius:14px;
+
+    outline:none;
+
+    font-family:inherit;
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+.attack-select-box select:focus{
+    border-color:#d8838a;
+
+    box-shadow:0 0 0 4px rgba(197,95,104,.10);
+}
+
+.attack-result-card{
+    padding:28px;
+
+    background:linear-gradient(
+        135deg,
+        #fffafa,
+        #ffffff
+    );
+
+    border:1px solid #ecd6d9;
+
+    border-radius:22px;
+
+    box-shadow:0 9px 25px rgba(197,95,104,.10);
+}
+
+.attack-weapon-heading{
+    display:flex;
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:25px;
+}
+
+.attack-weapon-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:62px;
+    height:62px;
+
+    flex-shrink:0;
+
+    color:#bd5963;
+
+    background:#f9e8ea;
+
+    border-radius:18px;
+
+    font-size:27px;
+}
+
+.attack-weapon-heading span{
+    display:block;
+
+    margin-bottom:4px;
+
+    color:#c55f68;
+
+    font-size:14px;
+    font-weight:700;
+}
+
+.attack-weapon-heading h2{
+    margin:0;
+
+    color:#493f40;
+
+    font-size:27px;
+    font-weight:700;
+}
+
+.attack-result-info-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:14px;
+}
+
+.attack-result-info{
+    padding:21px 14px;
+
+    text-align:center;
+
+    border:2px solid transparent;
+
+    border-radius:18px;
+}
+
+.attack-result-info span{
+    display:block;
+
+    margin-bottom:9px;
+
+    color:#777;
+
+    font-size:13px;
+}
+
+.attack-result-info strong{
+    font-size:20px;
+    font-weight:700;
+}
+
+.attack-result-info.reward{
+    background:#f4fff7;
+
+    border-color:#bce8c5;
+}
+
+.attack-result-info.reward strong{
+    color:#3f9a55;
+}
+
+.attack-result-info.durability{
+    background:#fffaf2;
+
+    border-color:#ead8a5;
+}
+
+.attack-result-info.durability strong{
+    color:#a37b20;
+}
+
+.attack-result-info.limit{
+    background:#f6f7ff;
+
+    border-color:#d4d7ef;
+}
+
+.attack-result-info.limit strong{
+    color:#6874ae;
+}
+
+.attack-hidden-notice{
+    display:none;
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+    padding:15px 17px;
+
+    color:#8b691e;
+
+    background:linear-gradient(
+        135deg,
+        #fff8dc,
+        #fffdf4
+    );
+
+    border:1px solid #ead078;
+
+    border-radius:15px;
+
+    font-size:14px;
+    font-weight:700;
+}
+
+.attack-hidden-notice.show{
+    display:flex;
+}
+
+.attack-hidden-notice i{
+    color:#b48a25;
+
+    flex-shrink:0;
+}
+
+@media(max-width:768px){
+
+    .attack-summary-grid{
+        grid-template-columns:1fr;
+    }
+
+    .durability-card,
+    .attack-card{
+        padding:24px 18px;
+    }
+
+    .durability-list{
+        grid-template-columns:1fr;
+    }
+
+    .attack-range-buttons{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .attack-range-btn:last-child{
+        grid-column:1 / 3;
+    }
+
+    .attack-result-card{
+        padding:22px 17px;
+    }
+
+    .attack-result-info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .attack-section-title{
+        font-size:26px;
+    }
+
+    .attack-weapon-heading h2{
+        font-size:22px;
+    }
+
+}
