@@ -5853,3 +5853,456 @@ body:has(.explore-card) .intro h2{
     }
 
 }
+/* ==========================
+   무기판매 페이지
+========================== */
+
+.weapon-sale-intro h2{
+    color:#4f9b73;
+}
+
+.weapon-sale-summary-grid{
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+
+    margin-top:24px;
+}
+
+.weapon-sale-summary-card{
+    padding:20px;
+
+    text-align:center;
+
+    background:#f7fff9;
+
+    border:2px solid #cfe7d8;
+
+    border-radius:18px;
+
+    box-shadow:0 6px 18px rgba(79,155,115,.09);
+}
+
+.weapon-sale-summary-card span{
+    display:block;
+
+    margin-bottom:9px;
+
+    color:#7f8c84;
+
+    font-size:13px;
+}
+
+.weapon-sale-summary-card strong{
+    color:#458d68;
+
+    font-size:18px;
+
+    font-weight:700;
+}
+
+.weapon-sale-warning{
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+    margin-top:20px;
+
+    padding:14px 16px;
+
+    color:#906552;
+
+    background:#fff7f2;
+
+    border:1px solid #edd5c5;
+
+    border-radius:14px;
+
+    font-size:14px;
+
+    line-height:1.65;
+}
+
+.weapon-sale-warning i{
+    margin-top:4px;
+
+    color:#c57a55;
+
+    flex-shrink:0;
+}
+
+.weapon-sale-card{
+    max-width:860px;
+
+    margin:40px auto;
+
+    padding:30px 36px;
+
+    background:#ffffff;
+
+    box-shadow:0 10px 30px rgba(79,155,115,.12);
+}
+
+.weapon-sale-section-title{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-bottom:26px;
+
+    color:#458d68;
+
+    font-size:30px;
+
+    font-weight:700;
+}
+
+.weapon-sale-range-buttons{
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:10px;
+
+    margin-bottom:25px;
+}
+
+.weapon-sale-range-btn{
+    padding:13px 9px;
+
+    color:#458d68;
+
+    background:#ffffff;
+
+    border:2px solid #cfe6d8;
+
+    border-radius:15px;
+
+    font-family:inherit;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:all .22s ease;
+}
+
+.weapon-sale-range-btn:hover{
+    transform:translateY(-2px);
+
+    background:#f5fff8;
+
+    border-color:#a9d2ba;
+}
+
+.weapon-sale-range-btn.active{
+    color:#ffffff;
+
+    background:#4f9b73;
+
+    border-color:#4f9b73;
+
+    box-shadow:0 7px 17px rgba(79,155,115,.24);
+}
+
+.weapon-sale-select-box{
+    padding:20px;
+
+    margin-bottom:24px;
+
+    background:#f8fffa;
+
+    border:1px solid #d2e7da;
+
+    border-radius:18px;
+}
+
+.weapon-sale-select-box label{
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:11px;
+
+    color:#4e6f5d;
+
+    font-size:16px;
+
+    font-weight:700;
+}
+
+.weapon-sale-select-box label i{
+    color:#4f9b73;
+}
+
+.weapon-sale-select-box select{
+    width:100%;
+
+    padding:14px 16px;
+
+    color:#46554c;
+
+    background:#ffffff;
+
+    border:2px solid #cde2d5;
+
+    border-radius:14px;
+
+    outline:none;
+
+    font-family:inherit;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+.weapon-sale-select-box select:focus{
+    border-color:#79b394;
+
+    box-shadow:0 0 0 4px rgba(79,155,115,.10);
+}
+
+.weapon-sale-result-card{
+    padding:28px;
+
+    background:linear-gradient(
+        135deg,
+        #fafffb,
+        #ffffff
+    );
+
+    border:1px solid #d2e5da;
+
+    border-radius:22px;
+
+    box-shadow:0 9px 25px rgba(79,155,115,.10);
+}
+
+.weapon-sale-heading{
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:25px;
+}
+
+.weapon-sale-icon{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:62px;
+
+    height:62px;
+
+    flex-shrink:0;
+
+    color:#458d68;
+
+    background:#e8f5ed;
+
+    border-radius:18px;
+
+    font-size:27px;
+}
+
+.weapon-sale-heading span{
+    display:block;
+
+    margin-bottom:4px;
+
+    color:#4f9b73;
+
+    font-size:14px;
+
+    font-weight:700;
+}
+
+.weapon-sale-heading h2{
+    margin:0;
+
+    color:#3f4d45;
+
+    font-size:27px;
+
+    font-weight:700;
+}
+
+.weapon-sale-price-box{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:18px;
+
+    padding:20px;
+
+    background:#f0faf4;
+
+    border:2px solid #c7e1d2;
+
+    border-radius:18px;
+}
+
+.weapon-sale-price-box span{
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    color:#527261;
+
+    font-weight:700;
+}
+
+.weapon-sale-price-box span i{
+    color:#4f9b73;
+}
+
+.weapon-sale-price-box strong{
+    color:#3e8b63;
+
+    font-size:23px;
+
+    font-weight:700;
+
+    text-align:right;
+}
+
+.weapon-sale-hidden-notice{
+    display:none;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+    padding:15px 17px;
+
+    color:#8b691e;
+
+    background:linear-gradient(
+        135deg,
+        #fff8dc,
+        #fffdf4
+    );
+
+    border:1px solid #ead078;
+
+    border-radius:15px;
+
+    font-size:14px;
+
+    font-weight:700;
+}
+
+.weapon-sale-hidden-notice.show{
+    display:flex;
+}
+
+.weapon-sale-hidden-notice i{
+    color:#b48a25;
+
+    flex-shrink:0;
+}
+
+.weapon-sale-unavailable{
+    display:none;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:16px;
+
+    padding:14px 16px;
+
+    color:#a35f68;
+
+    background:#fff7f8;
+
+    border:1px solid #efcdd1;
+
+    border-radius:14px;
+
+    font-size:14px;
+
+    font-weight:700;
+}
+
+.weapon-sale-unavailable.show{
+    display:flex;
+}
+
+.weapon-sale-unavailable i{
+    color:#c55f68;
+
+    flex-shrink:0;
+}
+
+@media(max-width:768px){
+
+    .weapon-sale-summary-grid{
+        grid-template-columns:1fr;
+    }
+
+    .weapon-sale-card{
+        padding:24px 18px;
+    }
+
+    .weapon-sale-range-buttons{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .weapon-sale-range-btn:last-child{
+        grid-column:1 / 3;
+    }
+
+    .weapon-sale-result-card{
+        padding:22px 17px;
+    }
+
+    .weapon-sale-price-box{
+        align-items:flex-start;
+
+        flex-direction:column;
+
+        gap:8px;
+    }
+
+    .weapon-sale-price-box strong{
+        text-align:left;
+    }
+
+    .weapon-sale-section-title{
+        font-size:26px;
+    }
+
+    .weapon-sale-heading h2{
+        font-size:22px;
+    }
+
+}

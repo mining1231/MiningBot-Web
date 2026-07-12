@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>무기판매</title>
+
+    <link rel="stylesheet" href="../../style.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="page-header">
+
+    <a href="../../index.html"
+       class="home-btn"
+       aria-label="홈으로 이동">
+
+        <i class="fa-solid fa-house"></i>
+
+    </a>
+
+    <h1>무기판매</h1>
+
+</header>
+
+<main class="page-content weapon-sale-page">
+
+    <!-- 소개 -->
+
+    <section class="intro weapon-sale-intro">
+
+        <h2>무기판매란?</h2>
+
+        <p>
+            <code>/무기판매</code> 명령어를 통해
+            현재 보유 중인 무기를 판매하고 재화를 획득할 수 있습니다.
+        </p>
+
+        <p>
+            무기 레벨이 높을수록 판매 금액도 크게 증가합니다.
+            단, 판매한 무기는 되돌릴 수 없으므로
+            현재 무기와 판매 금액을 반드시 확인한 뒤 결정해 주세요.
+        </p>
+
+        <div class="weapon-sale-summary-grid">
+
+            <div class="weapon-sale-summary-card">
+
+                <span>판매 가능 조건</span>
+
+                <strong>무기 Lv.2 이상</strong>
+
+            </div>
+
+            <div class="weapon-sale-summary-card">
+
+                <span>판매 제한</span>
+
+                <strong>Lv.1 판매 불가</strong>
+
+            </div>
+
+        </div>
+
+        <div class="weapon-sale-warning">
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <span>
+                무기를 판매하면 현재 무기를 잃게 됩니다.
+                판매 전 무기 단계와 금액을 신중하게 확인해 주세요.
+            </span>
+
+        </div>
+
+    </section>
+
+    <!-- 단계별 판매 금액 -->
+
+    <section class="level-card weapon-sale-card">
+
+        <div class="weapon-sale-section-title">
+
+            <i class="fa-solid fa-sack-dollar"></i>
+
+            단계별 무기 판매 금액
+
+        </div>
+
+        <div class="weapon-sale-range-buttons">
+
+            <button class="weapon-sale-range-btn active"
+                    data-start="1"
+                    data-end="10">
+
+                1강 ~ 10강
+
+            </button>
+
+            <button class="weapon-sale-range-btn"
+                    data-start="11"
+                    data-end="20">
+
+                11강 ~ 20강
+
+            </button>
+
+            <button class="weapon-sale-range-btn"
+                    data-start="21"
+                    data-end="30">
+
+                21강 ~ 30강
+
+            </button>
+
+            <button class="weapon-sale-range-btn"
+                    data-start="31"
+                    data-end="40">
+
+                31강 ~ 40강
+
+            </button>
+
+            <button class="weapon-sale-range-btn"
+                    data-start="41"
+                    data-end="50">
+
+                41강 ~ 50강
+
+            </button>
+
+        </div>
+
+        <div class="weapon-sale-select-box">
+
+            <label for="weaponSaleLevel">
+
+                <i class="fa-solid fa-list"></i>
+
+                무기 단계 선택
+
+            </label>
+
+            <select id="weaponSaleLevel"></select>
+
+        </div>
+
+        <article class="weapon-sale-result-card">
+
+            <div class="weapon-sale-heading">
+
+                <div class="weapon-sale-icon">
+
+                    <i class="fa-solid fa-hammer"></i>
+
+                </div>
+
+                <div>
+
+                    <span id="weaponSaleLevelLabel">
+                        Lv.1
+                    </span>
+
+                    <h2 id="weaponSaleName">
+                        나뭇가지
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div id="weaponSaleHiddenNotice"
+                 class="weapon-sale-hidden-notice">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <span>
+                    최종 무기의 이름은 추후 공개될 예정입니다.
+                </span>
+
+            </div>
+
+            <div class="weapon-sale-price-box">
+
+                <span>
+
+                    <i class="fa-solid fa-coins"></i>
+
+                    판매 금액
+
+                </span>
+
+                <strong id="weaponSalePrice">
+                    판매 불가
+                </strong>
+
+            </div>
+
+            <div id="weaponSaleUnavailable"
+                 class="weapon-sale-unavailable show">
+
+                <i class="fa-solid fa-circle-xmark"></i>
+
+                <span>
+                    Lv.1 나뭇가지는 판매할 수 없습니다.
+                </span>
+
+            </div>
+
+        </article>
+
+    </section>
+
+</main>
+
+<script src="weapon-sale.js"></script>
+
+</body>
+</html>
