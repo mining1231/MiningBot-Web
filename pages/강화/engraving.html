@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>별의 각인</title>
+
+    <link rel="stylesheet" href="../../style.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="page-header">
+
+    <a href="../../index.html"
+       class="home-btn"
+       aria-label="홈으로 이동">
+
+        <i class="fa-solid fa-house"></i>
+
+    </a>
+
+    <h1>별의 각인</h1>
+
+</header>
+
+<main class="page-content engraving-page">
+
+    <section class="intro engraving-intro">
+
+        <h2>별의 각인이란?</h2>
+
+        <p>
+            <code>/별의 각인</code> 명령어를 통해
+            무기에 특별한 힘을 새겨 더욱 강력하게 만들어 보세요.
+        </p>
+
+        <p>
+            각인을 진행하려면 상점에서 판매하는
+            <strong>각인석</strong>이 필요하며,
+            각인 단계가 높아질수록 공격으로 획득하는 보너스도 증가합니다.
+        </p>
+
+        <p>
+            다만 높은 단계에서는 실패뿐 아니라 무기 파괴가 발생할 수 있으며,
+            무기가 파괴될 경우 현재 무기 레벨이 초기화됩니다.
+            신중하게 도전해 최고의 별을 완성해 보세요! ⭐
+        </p>
+
+        <div class="engraving-summary-grid">
+
+            <div class="engraving-summary-card">
+
+                <span>필요 아이템</span>
+
+                <strong>각인석</strong>
+
+            </div>
+
+            <div class="engraving-summary-card">
+
+                <span>최대 단계</span>
+
+                <strong>30성</strong>
+
+            </div>
+
+            <div class="engraving-summary-card">
+
+                <span>주요 효과</span>
+
+                <strong>공격 보너스 증가</strong>
+
+            </div>
+
+        </div>
+
+        <div class="engraving-danger-box">
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <span>
+                파괴가 발생하면 무기 레벨이 초기화됩니다.
+                단, 무기 강화 중 파괴되었을 때에는 별의 각인이 유지됩니다.
+            </span>
+
+        </div>
+
+    </section>
+
+    <section class="level-card engraving-card">
+
+        <div class="engraving-section-title">
+
+            <i class="fa-solid fa-star"></i>
+
+            단계별 각인 확률
+
+        </div>
+
+        <div class="engraving-range-buttons">
+
+            <button class="engraving-range-btn active"
+                    data-start="1"
+                    data-end="10">
+
+                1성 ~ 10성
+
+            </button>
+
+            <button class="engraving-range-btn"
+                    data-start="11"
+                    data-end="20">
+
+                11성 ~ 20성
+
+            </button>
+
+            <button class="engraving-range-btn"
+                    data-start="21"
+                    data-end="30">
+
+                21성 ~ 30성
+
+            </button>
+
+        </div>
+
+        <div class="engraving-select-box">
+
+            <label for="engravingLevel">
+
+                <i class="fa-solid fa-list"></i>
+
+                각인 단계 선택
+
+            </label>
+
+            <select id="engravingLevel"></select>
+
+        </div>
+
+        <article class="engraving-result-card">
+
+            <div class="engraving-heading">
+
+                <div class="engraving-icon">
+
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <div>
+
+                    <span id="engravingLevelLabel">1성</span>
+
+                    <h2 id="engravingTitle">
+                        별의 각인 1성
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="engraving-rate-grid">
+
+                <div class="engraving-stat success">
+
+                    <span>성공 확률</span>
+
+                    <strong id="engravingSuccess">
+                        95%
+                    </strong>
+
+                </div>
+
+                <div class="engraving-stat failure">
+
+                    <span>실패 확률</span>
+
+                    <strong id="engravingFail">
+                        5%
+                    </strong>
+
+                </div>
+
+                <div class="engraving-stat destroy">
+
+                    <span>파괴 확률</span>
+
+                    <strong id="engravingDestroy">
+                        0%
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <div class="engraving-bonus-box">
+
+                <span>
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    공격 보너스
+
+                </span>
+
+                <strong id="engravingBonus">
+                    0.3%
+                </strong>
+
+            </div>
+
+            <div id="engravingDestroyNotice"
+                 class="engraving-destroy-notice">
+
+                <i class="fa-solid fa-skull-crossbones"></i>
+
+                <span>
+                    이 단계부터 각인 실패 시 무기가 파괴될 수 있습니다.
+                </span>
+
+            </div>
+
+        </article>
+
+    </section>
+
+</main>
+
+<script src="engraving.js"></script>
+
+</body>
+</html>

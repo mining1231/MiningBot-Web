@@ -6306,3 +6306,453 @@ body:has(.explore-card) .intro h2{
     }
 
 }
+/* ==========================
+   별의 각인 페이지
+========================== */
+
+.engraving-intro h2{
+    color:#d28b3e;
+}
+
+.engraving-summary-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+    margin-top:24px;
+}
+
+.engraving-summary-card{
+    padding:20px 14px;
+
+    text-align:center;
+
+    background:#fffaf2;
+
+    border:2px solid #f0dcc0;
+
+    border-radius:18px;
+
+    box-shadow:0 6px 18px rgba(210,139,62,.09);
+}
+
+.engraving-summary-card span{
+    display:block;
+
+    margin-bottom:9px;
+
+    color:#8e8275;
+
+    font-size:13px;
+}
+
+.engraving-summary-card strong{
+    color:#b97832;
+
+    font-size:17px;
+    font-weight:700;
+}
+
+.engraving-danger-box{
+    display:flex;
+    align-items:flex-start;
+
+    gap:10px;
+
+    margin-top:20px;
+
+    padding:14px 16px;
+
+    color:#906552;
+
+    background:#fff7f2;
+
+    border:1px solid #edd5c5;
+
+    border-radius:14px;
+
+    font-size:14px;
+    line-height:1.65;
+}
+
+.engraving-danger-box i{
+    margin-top:4px;
+
+    color:#c57a55;
+
+    flex-shrink:0;
+}
+
+.engraving-card{
+    max-width:860px;
+
+    margin:40px auto;
+
+    padding:30px 36px;
+
+    background:#ffffff;
+
+    box-shadow:0 10px 30px rgba(210,139,62,.12);
+}
+
+.engraving-section-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:10px;
+
+    margin-bottom:26px;
+
+    color:#c47c30;
+
+    font-size:30px;
+    font-weight:700;
+}
+
+.engraving-section-title i{
+    color:#d28b3e;
+}
+
+.engraving-range-buttons{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:12px;
+
+    margin-bottom:25px;
+}
+
+.engraving-range-btn{
+    padding:13px 10px;
+
+    color:#b97832;
+
+    background:#ffffff;
+
+    border:2px solid #ecd9bd;
+
+    border-radius:15px;
+
+    font-family:inherit;
+    font-size:15px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:all .22s ease;
+}
+
+.engraving-range-btn:hover{
+    transform:translateY(-2px);
+
+    background:#fffaf3;
+
+    border-color:#ddb98d;
+}
+
+.engraving-range-btn.active{
+    color:#ffffff;
+
+    background:#d28b3e;
+
+    border-color:#d28b3e;
+
+    box-shadow:0 7px 17px rgba(210,139,62,.25);
+}
+
+.engraving-select-box{
+    padding:20px;
+
+    margin-bottom:24px;
+
+    background:#fffaf4;
+
+    border:1px solid #eadbc6;
+
+    border-radius:18px;
+}
+
+.engraving-select-box label{
+    display:flex;
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:11px;
+
+    color:#755a3e;
+
+    font-size:16px;
+    font-weight:700;
+}
+
+.engraving-select-box label i{
+    color:#d28b3e;
+}
+
+.engraving-select-box select{
+    width:100%;
+
+    padding:14px 16px;
+
+    color:#564a3f;
+
+    background:#ffffff;
+
+    border:2px solid #e4d1b8;
+
+    border-radius:14px;
+
+    outline:none;
+
+    font-family:inherit;
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+.engraving-select-box select:focus{
+    border-color:#d8a86f;
+
+    box-shadow:0 0 0 4px rgba(210,139,62,.10);
+}
+
+.engraving-result-card{
+    padding:28px;
+
+    background:linear-gradient(
+        135deg,
+        #fffaf3,
+        #ffffff
+    );
+
+    border:1px solid #ead9c0;
+
+    border-radius:22px;
+
+    box-shadow:0 9px 25px rgba(210,139,62,.10);
+}
+
+.engraving-heading{
+    display:flex;
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:25px;
+}
+
+.engraving-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:62px;
+    height:62px;
+
+    flex-shrink:0;
+
+    color:#c47c30;
+
+    background:#fff0da;
+
+    border-radius:18px;
+
+    font-size:27px;
+}
+
+.engraving-heading span{
+    display:block;
+
+    margin-bottom:4px;
+
+    color:#d28b3e;
+
+    font-size:14px;
+    font-weight:700;
+}
+
+.engraving-heading h2{
+    margin:0;
+
+    color:#4e4338;
+
+    font-size:27px;
+    font-weight:700;
+}
+
+.engraving-rate-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:14px;
+}
+
+.engraving-stat{
+    padding:20px 14px;
+
+    text-align:center;
+
+    border:2px solid transparent;
+
+    border-radius:18px;
+}
+
+.engraving-stat span{
+    display:block;
+
+    margin-bottom:9px;
+
+    color:#777;
+
+    font-size:13px;
+}
+
+.engraving-stat strong{
+    font-size:22px;
+    font-weight:700;
+}
+
+.engraving-stat.success{
+    background:#f4fff7;
+
+    border-color:#bce8c5;
+}
+
+.engraving-stat.success strong{
+    color:#3f9a55;
+}
+
+.engraving-stat.failure{
+    background:#fffdf5;
+
+    border-color:#eadb9d;
+}
+
+.engraving-stat.failure strong{
+    color:#a77d16;
+}
+
+.engraving-stat.destroy{
+    background:#fff7f8;
+
+    border-color:#efc0ca;
+}
+
+.engraving-stat.destroy strong{
+    color:#c05f78;
+}
+
+.engraving-bonus-box{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:18px;
+
+    margin-top:16px;
+
+    padding:18px 20px;
+
+    background:#fff5e6;
+
+    border:1px solid #e8cfa8;
+
+    border-radius:16px;
+}
+
+.engraving-bonus-box span{
+    display:flex;
+    align-items:center;
+
+    gap:8px;
+
+    color:#765a3b;
+
+    font-weight:700;
+}
+
+.engraving-bonus-box span i{
+    color:#d28b3e;
+}
+
+.engraving-bonus-box strong{
+    color:#b97832;
+
+    font-size:22px;
+    font-weight:700;
+}
+
+.engraving-destroy-notice{
+    display:none;
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:16px;
+
+    padding:14px 16px;
+
+    color:#a35f68;
+
+    background:#fff7f8;
+
+    border:1px solid #efcdd1;
+
+    border-radius:14px;
+
+    font-size:14px;
+    font-weight:700;
+}
+
+.engraving-destroy-notice.show{
+    display:flex;
+}
+
+.engraving-destroy-notice i{
+    color:#c55f68;
+
+    flex-shrink:0;
+}
+
+@media(max-width:768px){
+
+    .engraving-summary-grid{
+        grid-template-columns:1fr;
+    }
+
+    .engraving-card{
+        padding:24px 18px;
+    }
+
+    .engraving-range-buttons{
+        grid-template-columns:1fr;
+    }
+
+    .engraving-result-card{
+        padding:22px 17px;
+    }
+
+    .engraving-rate-grid{
+        grid-template-columns:1fr;
+    }
+
+    .engraving-bonus-box{
+        align-items:flex-start;
+        flex-direction:column;
+
+        gap:8px;
+    }
+
+    .engraving-section-title{
+        font-size:26px;
+    }
+
+    .engraving-heading h2{
+        font-size:22px;
+    }
+
+}
