@@ -6988,3 +6988,215 @@ body:has(.explore-card) .intro h2{
     }
 
 }
+/* ==========================
+   경험치 페이지
+========================== */
+
+.exp-intro h2{
+    color:#c56d92;
+}
+
+.exp-summary-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+    margin-top:24px;
+}
+
+.exp-summary-card{
+    padding:20px 14px;
+
+    text-align:center;
+
+    background:#fff8fb;
+
+    border:2px solid #f1d1df;
+
+    border-radius:18px;
+
+    box-shadow:0 6px 18px rgba(197,109,146,.09);
+}
+
+.exp-summary-card span{
+    display:block;
+
+    margin-bottom:9px;
+
+    color:#8b8084;
+
+    font-size:13px;
+}
+
+.exp-summary-card strong{
+    color:#c56d92;
+
+    font-size:18px;
+    font-weight:700;
+}
+
+.exp-preview-card,
+.exp-guide-card{
+    max-width:860px;
+
+    margin:40px auto;
+
+    padding:30px 36px;
+
+    background:#ffffff;
+
+    box-shadow:0 10px 30px rgba(197,109,146,.12);
+}
+
+.exp-section-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:10px;
+
+    margin-bottom:28px;
+
+    color:#c56d92;
+
+    font-size:30px;
+    font-weight:700;
+}
+
+.exp-preview{
+    max-width:600px;
+
+    margin:0 auto;
+
+    text-align:center;
+}
+
+.exp-preview img{
+    display:block;
+
+    width:100%;
+    height:auto;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 28px rgba(0,0,0,.12);
+}
+
+.exp-guide-list{
+    display:flex;
+    flex-direction:column;
+
+    gap:14px;
+}
+
+.exp-guide-row{
+    display:flex;
+    align-items:center;
+
+    gap:16px;
+
+    padding:17px 18px;
+
+    background:#fffafb;
+
+    border:1px solid #f0d8e1;
+
+    border-radius:16px;
+
+    transition:all .22s ease;
+}
+
+.exp-guide-row:hover{
+    transform:translateY(-2px);
+
+    background:#fff4f8;
+
+    border-color:#e9bfd0;
+}
+
+.exp-guide-number{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:42px;
+    height:42px;
+
+    flex-shrink:0;
+
+    background:#f6dce6;
+
+    border-radius:50%;
+
+    color:#b85b7f;
+
+    font-size:17px;
+    font-weight:700;
+}
+
+.exp-guide-row strong{
+    color:#5a4037;
+
+    font-size:16px;
+}
+
+.exp-guide-row p{
+    margin:5px 0 0;
+
+    color:#777;
+
+    font-size:14px;
+    line-height:1.55;
+}
+
+.exp-notice{
+    display:flex;
+    align-items:flex-start;
+
+    gap:10px;
+
+    margin-top:20px;
+
+    padding:14px 16px;
+
+    color:#5d7488;
+
+    background:#f4f9ff;
+
+    border:1px solid #d2e4f4;
+
+    border-radius:14px;
+
+    font-size:14px;
+    line-height:1.65;
+}
+
+.exp-notice i{
+    margin-top:4px;
+
+    color:#6b98bd;
+
+    flex-shrink:0;
+}
+
+@media(max-width:768px){
+
+    .exp-summary-grid{
+        grid-template-columns:1fr;
+    }
+
+    .exp-preview-card,
+    .exp-guide-card{
+        padding:24px 18px;
+    }
+
+    .exp-section-title{
+        font-size:26px;
+    }
+
+    .exp-guide-row{
+        align-items:flex-start;
+    }
+
+}
