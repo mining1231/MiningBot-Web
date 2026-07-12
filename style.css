@@ -7296,15 +7296,3 @@ body:has(.explore-card) .intro h2{
     }
 
 }
-#sidebar.active{
-    transform:translateX(0);
-}
-
-#overlay.active{
-    opacity:1;
-    visibility:visible;
-}
-
-#sidebar .menu-item.active .submenu{
-    display:block;
-}

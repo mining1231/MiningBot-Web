@@ -4,48 +4,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const sidebar = document.getElementById("sidebar");
     const overlay = document.getElementById("overlay");
 
-    /* ==========================
-       사이드바 열기 / 닫기
-    ========================== */
-
-    function openSidebar() {
-
-        sidebar?.classList.add("active");
-        overlay?.classList.add("active");
-        document.body.classList.add("menu-open");
-
-    }
-
-    function closeSidebar() {
-
-        sidebar?.classList.remove("active");
-        overlay?.classList.remove("active");
-        document.body.classList.remove("menu-open");
-
-    }
-
+    /* 사이드바 열기 / 닫기 */
     if (menuBtn && sidebar && overlay) {
 
         menuBtn.addEventListener("click", () => {
-
-            const isOpen = sidebar.classList.contains("active");
-
-            if (isOpen) {
-                closeSidebar();
-            } else {
-                openSidebar();
-            }
-
+            sidebar.classList.toggle("open");
+            overlay.classList.toggle("show");
+            document.body.classList.toggle("menu-open");
         });
 
-        overlay.addEventListener("click", closeSidebar);
-
+        overlay.addEventListener("click", () => {
+            sidebar.classList.remove("open");
+            overlay.classList.remove("show");
+            document.body.classList.remove("menu-open");
+        });
     }
 
-    /* ==========================
-       아코디언 하위 메뉴
-    ========================== */
-
+    /* 사이드바 하위 메뉴 */
     const menuTitles = document.querySelectorAll(
         "#sidebar .menu-title"
     );
@@ -54,49 +29,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
         title.addEventListener("click", () => {
 
-            const currentMenuItem =
-                title.closest(".menu-item");
+            const submenu = title.nextElementSibling;
 
-            if (!currentMenuItem) return;
+            if (!submenu) return;
 
             document
-                .querySelectorAll("#sidebar .menu-item")
-                .forEach(item => {
+                .querySelectorAll("#sidebar .submenu")
+                .forEach(otherSubmenu => {
 
-                    if (item !== currentMenuItem) {
-                        item.classList.remove("active");
+                    if (otherSubmenu !== submenu) {
+                        otherSubmenu.classList.remove("open");
                     }
 
                 });
 
-            currentMenuItem.classList.toggle("active");
-
+            submenu.classList.toggle("open");
         });
 
     });
 
-    /* ==========================
-       사이드바 링크 클릭 시 닫기
-    ========================== */
-
-    const sidebarLinks = document.querySelectorAll(
-        "#sidebar .submenu a"
-    );
-
-    sidebarLinks.forEach(link => {
-
-        link.addEventListener("click", closeSidebar);
-
-    });
-
-    /* ==========================
-       ESC 키로 사이드바 닫기
-    ========================== */
-
+    /* ESC 키로 닫기 */
     document.addEventListener("keydown", event => {
 
         if (event.key === "Escape") {
-            closeSidebar();
+            sidebar?.classList.remove("open");
+            overlay?.classList.remove("show");
+            document.body.classList.remove("menu-open");
         }
 
     });
