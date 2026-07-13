@@ -7936,3 +7936,12 @@ body:has(.explore-card) .intro h2{
 
     text-align:center;
 }
+@media (max-width: 768px) {
+    .hero {
+        height: 240px;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
