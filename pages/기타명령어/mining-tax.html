@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>경험치</title>
+    <title>미닝세</title>
 
     <link rel="stylesheet" href="../../style.css">
 
@@ -34,9 +34,10 @@
 
     </a>
 
-    <h1>경험치</h1>
+    <h1>미닝세</h1>
 
 </header>
+
 <nav id="sidebar">
 
     <ul>
@@ -234,50 +235,154 @@
 
 <div id="overlay"></div>
 
-<main class="page-content exp-page">
+<main class="page-content">
 
-    <section class="intro exp-intro">
+    <section class="intro tax-intro">
 
-        <h2>경험치란?</h2>
+        <h2>
+            <i class="fa-solid fa-coins"></i>
+            미닝세란?
+        </h2>
 
         <p>
-            <code>/경험치</code> 명령어를 통해 미닝봇의 하트를 누르고
-            농사 또는 카페 경험치를 획득할 수 있습니다.
+            미닝세는 미닝봇 경제의 과도한 인플레이션을 방지하고,
+            안정적인 경제 환경을 유지하기 위해 운영되는 제도입니다.
         </p>
 
         <p>
-            버튼을 누르면 농사 경험치와 카페 경험치 중 하나를 선택할 수 있으며,
-            선택한 경험치를 <strong>10~20</strong>만큼 무작위로 획득합니다.
+            매일 자정 <strong>00:00</strong>을 기준으로 유저가 보유한 금액을
+            확인하며, 보유 금액에 따라 미닝세가 자동으로 징수됩니다.
         </p>
 
-        <p>
-            경험치는 <strong>12시간마다 한 번</strong> 받을 수 있으니,
-            원하는 콘텐츠를 성장시키는 데 활용해 보세요! 💗
-        </p>
+        <ul>
+            <li>매일 00:00 자동 징수</li>
+            <li>자정 당시 보유 금액을 기준으로 계산</li>
+            <li>1억 미만을 보유한 유저는 징수 대상에서 제외</li>
+        </ul>
 
-        <div class="exp-summary-grid">
+    </section>
 
-            <div class="exp-summary-card">
+    <section class="level-card tax-card">
 
-                <span>획득 경험치</span>
+        <div class="tax-title">
+            <i class="fa-solid fa-chart-pie"></i>
+            미닝세 징수 기준
+        </div>
 
-                <strong>10 ~ 20</strong>
+        <div class="tax-summary-grid">
+
+            <div class="tax-summary-card">
+
+                <i class="fa-regular fa-clock"></i>
+
+                <span>징수 시간</span>
+
+                <strong>매일 00:00</strong>
 
             </div>
 
-            <div class="exp-summary-card">
+            <div class="tax-summary-card">
 
-                <span>선택 가능</span>
+                <i class="fa-solid fa-shield-halved"></i>
 
-                <strong>농사 · 카페</strong>
+                <span>운영 목적</span>
+
+                <strong>인플레이션 방지</strong>
 
             </div>
 
-            <div class="exp-summary-card">
+        </div>
 
-                <span>쿨타임</span>
+        <div class="tax-rate-list">
 
-                <strong>12시간</strong>
+            <div class="tax-rate-row">
+
+                <div class="tax-rate-info">
+
+                    <span class="tax-rate-label">
+                        1억 미만
+                    </span>
+
+                    <p>미닝세가 징수되지 않습니다.</p>
+
+                </div>
+
+                <strong class="tax-rate-value tax-free">
+                    0%
+                </strong>
+
+            </div>
+
+            <div class="tax-rate-row">
+
+                <div class="tax-rate-info">
+
+                    <span class="tax-rate-label">
+                        1억 이상 ~ 10억 미만
+                    </span>
+
+                    <p>보유 금액을 기준으로 미닝세가 징수됩니다.</p>
+
+                </div>
+
+                <strong class="tax-rate-value">
+                    5%
+                </strong>
+
+            </div>
+
+            <div class="tax-rate-row">
+
+                <div class="tax-rate-info">
+
+                    <span class="tax-rate-label">
+                        10억 이상
+                    </span>
+
+                    <p>보유 금액을 기준으로 미닝세가 징수됩니다.</p>
+
+                </div>
+
+                <strong class="tax-rate-value tax-high">
+                    10%
+                </strong>
+
+            </div>
+
+        </div>
+
+        <div class="tax-example-box">
+
+            <h3>
+                <i class="fa-solid fa-calculator"></i>
+                징수 예시
+            </h3>
+
+            <div class="tax-example-row">
+
+                <span>5억 보유</span>
+
+                <strong>
+                    2,500만 징수
+                </strong>
+
+                <span class="tax-after">
+                    징수 후 4억 7,500만
+                </span>
+
+            </div>
+
+            <div class="tax-example-row">
+
+                <span>20억 보유</span>
+
+                <strong>
+                    2억 징수
+                </strong>
+
+                <span class="tax-after">
+                    징수 후 18억
+                </span>
 
             </div>
 
@@ -285,68 +390,61 @@
 
     </section>
 
-    <section class="level-card exp-preview-card">
+    <section class="level-card tax-channel-card">
 
-        <div class="exp-section-title">
+        <div class="tax-title">
 
-            <i class="fa-solid fa-image"></i>
-
-            실제 사용 화면
+            <i class="fa-solid fa-gear"></i>
+            미닝세 채널 설정
 
         </div>
 
-        <div class="exp-preview">
+        <p class="tax-channel-description">
+            서버 관리자는 미닝세가 징수된 유저와 징수 금액을
+            안내받을 채널을 직접 지정할 수 있습니다.
+        </p>
 
-            <img
-                src="../../images/exp_preview.png"
-                alt="미닝봇 경험치 명령어 사용 화면"
-            >
+        <div class="tax-command-box">
 
-            <p class="preview-caption">
-                실제 미닝봇 경험치 명령어 화면입니다.
+            <span>관리자 전용 명령어</span>
+
+            <code>/미닝세채널설정</code>
+
+        </div>
+
+        <ol class="tax-setting-steps">
+
+            <li>
+                미닝세 징수 목록을 받을 채널로 이동합니다.
+            </li>
+
+            <li>
+                <code>/미닝세채널설정</code> 명령어를 사용합니다.
+            </li>
+
+            <li>
+                설정이 완료되면 매일 자정 지정된 채널에
+                미닝세 징수 목록이 표시됩니다.
+            </li>
+
+        </ol>
+
+        <div class="tax-admin-notice">
+
+            <i class="fa-solid fa-circle-exclamation"></i>
+
+            <p>
+                해당 명령어는 <strong>서버 관리자만 사용할 수 있습니다.</strong>
+                미닝세 채널을 설정하지 않은 서버에는 징수 목록이 표시되지 않습니다.
             </p>
 
         </div>
 
     </section>
 
-    <section class="level-card exp-guide-card">
-
-        <div class="exp-section-title">
-
-            <i class="fa-solid fa-heart"></i>
-
-            이용 방법
-
-        </div>
-
-        <div class="exp-guide-list">
-
-            <div class="exp-guide-row">
-
-                <div class="exp-guide-number">1</div>
-
-                <div>
-                    <strong>하트 누르기</strong>
-                    <p>미닝봇 응원 페이지에서 하트를 눌러주세요.</p>
-                </div>
-
-            </div>
-
-            <div class="exp-guide-row">
-
-                <div class="exp-guide-number">2</div>
-
-                <div>
-                    <strong>경험치 받기</strong>
-                    <p>명령어 화면에서 경험치 받기 버튼을 눌러주세요.</p>
-                </div>
-
-            </div>
-
-    </section>
-
 </main>
+
 <script src="../../script.js"></script>
+
 </body>
 </html>

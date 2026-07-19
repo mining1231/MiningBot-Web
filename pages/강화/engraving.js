@@ -1,5 +1,6 @@
 const engravingData = {
     1: {
+        stone: 1,
         success: "95%",
         fail: "5%",
         destroy: "0%",
@@ -7,6 +8,7 @@ const engravingData = {
     },
 
     2: {
+        stone: 1,
         success: "90%",
         fail: "10%",
         destroy: "0%",
@@ -14,6 +16,7 @@ const engravingData = {
     },
 
     3: {
+        stone: 1,
         success: "85%",
         fail: "15%",
         destroy: "0%",
@@ -21,6 +24,7 @@ const engravingData = {
     },
 
     4: {
+        stone: 1,
         success: "80%",
         fail: "20%",
         destroy: "0%",
@@ -28,6 +32,7 @@ const engravingData = {
     },
 
     5: {
+        stone: 2,
         success: "75%",
         fail: "25%",
         destroy: "0%",
@@ -35,6 +40,7 @@ const engravingData = {
     },
 
     6: {
+        stone: 2,
         success: "70%",
         fail: "30%",
         destroy: "0%",
@@ -42,6 +48,7 @@ const engravingData = {
     },
 
     7: {
+        stone: 2,
         success: "65%",
         fail: "35%",
         destroy: "0%",
@@ -49,6 +56,7 @@ const engravingData = {
     },
 
     8: {
+        stone: 2,
         success: "60%",
         fail: "40%",
         destroy: "0%",
@@ -56,6 +64,7 @@ const engravingData = {
     },
 
     9: {
+        stone: 3,
         success: "55%",
         fail: "45%",
         destroy: "0%",
@@ -63,6 +72,7 @@ const engravingData = {
     },
 
     10: {
+        stone: 3,
         success: "50%",
         fail: "50%",
         destroy: "0%",
@@ -70,13 +80,15 @@ const engravingData = {
     },
 
     11: {
+        stone: 3,
         success: "45%",
-        fail: "45%",
+        fail: "55%",
         destroy: "0%",
         bonus: "4.3%"
     },
 
     12: {
+        stone: 3,
         success: "40%",
         fail: "60%",
         destroy: "0%",
@@ -84,6 +96,7 @@ const engravingData = {
     },
 
     13: {
+        stone: 4,
         success: "35%",
         fail: "65%",
         destroy: "0%",
@@ -91,6 +104,7 @@ const engravingData = {
     },
 
     14: {
+        stone: 4,
         success: "30%",
         fail: "70%",
         destroy: "0%",
@@ -98,6 +112,7 @@ const engravingData = {
     },
 
     15: {
+        stone: 4,
         success: "30%",
         fail: "70%",
         destroy: "0%",
@@ -105,6 +120,7 @@ const engravingData = {
     },
 
     16: {
+        stone: 4,
         success: "30%",
         fail: "67.9%",
         destroy: "2.1%",
@@ -112,6 +128,7 @@ const engravingData = {
     },
 
     17: {
+        stone: 5,
         success: "30%",
         fail: "67.9%",
         destroy: "2.1%",
@@ -119,6 +136,7 @@ const engravingData = {
     },
 
     18: {
+        stone: 5,
         success: "15%",
         fail: "78.2%",
         destroy: "6.8%",
@@ -126,13 +144,15 @@ const engravingData = {
     },
 
     19: {
+        stone: 5,
         success: "15%",
-        fail: "76.5%",
+        fail: "78.2%",
         destroy: "6.8%",
         bonus: "11.0%"
     },
 
     20: {
+        stone: 5,
         success: "15%",
         fail: "76.5%",
         destroy: "8.5%",
@@ -140,6 +160,7 @@ const engravingData = {
     },
 
     21: {
+        stone: 5,
         success: "30%",
         fail: "59.5%",
         destroy: "10.5%",
@@ -147,6 +168,7 @@ const engravingData = {
     },
 
     22: {
+        stone: 6,
         success: "15%",
         fail: "72.25%",
         destroy: "12.75%",
@@ -154,6 +176,7 @@ const engravingData = {
     },
 
     23: {
+        stone: 6,
         success: "15%",
         fail: "68%",
         destroy: "17%",
@@ -161,6 +184,7 @@ const engravingData = {
     },
 
     24: {
+        stone: 6,
         success: "11%",
         fail: "70.8%",
         destroy: "18.2%",
@@ -168,6 +192,7 @@ const engravingData = {
     },
 
     25: {
+        stone: 6,
         success: "10%",
         fail: "71.6%",
         destroy: "18.4%",
@@ -175,6 +200,7 @@ const engravingData = {
     },
 
     26: {
+        stone: 7,
         success: "9%",
         fail: "72.4%",
         destroy: "18.6%",
@@ -182,6 +208,7 @@ const engravingData = {
     },
 
     27: {
+        stone: 7,
         success: "7%",
         fail: "74.2%",
         destroy: "18.8%",
@@ -189,6 +216,7 @@ const engravingData = {
     },
 
     28: {
+        stone: 7,
         success: "5%",
         fail: "75.8%",
         destroy: "19.2%",
@@ -196,6 +224,7 @@ const engravingData = {
     },
 
     29: {
+        stone: 8,
         success: "3%",
         fail: "77.4%",
         destroy: "19.6%",
@@ -203,12 +232,14 @@ const engravingData = {
     },
 
     30: {
+        stone: 8,
         success: "2%",
         fail: "78%",
         destroy: "20%",
         bonus: "37.0%"
     }
 };
+
 
 const engravingLevelSelect =
     document.getElementById("engravingLevel");
@@ -230,6 +261,9 @@ const engravingFail =
 
 const engravingDestroy =
     document.getElementById("engravingDestroy");
+
+const engravingStone =
+    document.getElementById("engravingStone");
 
 const engravingBonus =
     document.getElementById("engravingBonus");
@@ -267,6 +301,7 @@ function loadEngravingLevel(level) {
     engravingSuccess.textContent = data.success;
     engravingFail.textContent = data.fail;
     engravingDestroy.textContent = data.destroy;
+    engravingStone.textContent = `${data.stone}개`;
     engravingBonus.textContent = data.bonus;
 
     const destroyNumber = Number(
