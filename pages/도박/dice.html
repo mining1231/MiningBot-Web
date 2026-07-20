@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>주사위</title>
+
+    <link rel="stylesheet"
+          href="../../style.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="page-header">
+
+    <button id="menuBtn"
+            class="page-menu-btn"
+            type="button"
+            aria-label="메뉴 열기">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+    <a href="../../index.html"
+       class="home-btn"
+       aria-label="홈으로 이동">
+
+        <i class="fa-solid fa-house"></i>
+
+    </a>
+
+    <h1>주사위</h1>
+
+</header>
+
+
+<!-- 사이드바 -->
+
+<nav id="sidebar">
+
+    <ul>
+
+        <!-- 재화획득 -->
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+
+                <i class="fa-solid fa-coins"></i>
+                재화획득
+
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/재화획득/farming.html">농사</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/cafe.html">카페</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/explore.html">탐험</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/lottery.html">복권 (점검 중)</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/loot.html">전리품</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/checkin.html">출석체크</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <!-- 도박 -->
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+
+                <i class="fa-solid fa-dice"></i>
+                도박
+
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/도박/fishing.html">낚시</a>
+                </li>
+
+                <li>
+                    <a href="/pages/도박/pubg.html">배그</a>
+                </li>
+
+                <li>
+                    <a href="/pages/도박/lotto.html">로또</a>
+                </li>
+
+                <li>
+                    <a href="/pages/도박/rps.html">가위바위보</a>
+                </li>
+
+                <li>
+                    <a href="/pages/도박/dice.html">주사위</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <!-- 강화 -->
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+
+                <i class="fa-solid fa-hammer"></i>
+                강화
+
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/강화/upgrade.html">강화 확률</a>
+                </li>
+
+                <li>
+                    <a href="/pages/강화/attack.html">공격</a>
+                </li>
+
+                <li>
+                    <a href="/pages/강화/weapon-sale.html">무기판매</a>
+                </li>
+
+                <li>
+                    <a href="/pages/강화/engraving.html">별의 각인</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <!-- 펫 -->
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+
+                <i class="fa-solid fa-paw"></i>
+                펫
+
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/펫/summon.html">펫 뽑기</a>
+                </li>
+
+                <li>
+                    <a href="/pages/펫/levelup.html">펫 레벨업</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <!-- 상점 -->
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+                상점
+
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/상점/shop.html">상점</a>
+                </li>
+
+                <li>
+                    <a href="/pages/상점/petshop.html">펫 상점</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <!-- 가방 -->
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+
+                <i class="fa-solid fa-briefcase"></i>
+                가방
+
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/가방/mysterybox.html">물음표박스</a>
+                </li>
+
+                <li>
+                    <a href="/pages/가방/items.html">기타 아이템</a>
+                </li>
+
+                <li>
+                    <a href="/pages/가방/bundle.html">밍꾸러미</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <!-- 기타 명령어 -->
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+
+                <i class="fa-solid fa-puzzle-piece"></i>
+                기타 명령어
+
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/기타명령어/help.html">도움말</a>
+                </li>
+
+                <li>
+                    <a href="/pages/기타명령어/bankruptcy.html">파산신청</a>
+                </li>
+
+                <li>
+                    <a href="/pages/기타명령어/exp.html">경험치</a>
+                </li>
+
+                <li>
+                    <a href="/pages/기타명령어/mining-tax.html">미닝세</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<div id="overlay"></div>
+
+
+<!-- 주사위 페이지 내용 -->
+
+<main class="page-content dice-page">
+
+    <!-- 소개 -->
+
+    <section class="intro dice-intro">
+
+        <h2>주사위란?</h2>
+
+        <p>
+            <code>/주사위</code> 명령어를 통해
+            미닝봇과 짜릿한 주사위 대결을 펼쳐보세요!
+        </p>
+
+        <p>
+            나와 미닝봇이 주사위를 각각 <strong>3번씩</strong> 굴리며,
+            나온 숫자의 총합이 더 높은 쪽이 승리합니다.
+        </p>
+
+        <p>
+            승리하면 베팅 금액만큼 획득하고,
+            패배하면 베팅 금액만큼 잃게 됩니다.
+            과연 행운의 주사위는 누구의 편일까요? 🎲
+        </p>
+
+        <div class="dice-summary-grid">
+
+            <div class="dice-summary-card">
+
+                <span>이용 조건</span>
+
+                <strong>없음</strong>
+
+            </div>
+
+            <div class="dice-summary-card">
+
+                <span>최소 베팅액</span>
+
+                <strong>1원</strong>
+
+            </div>
+
+            <div class="dice-summary-card">
+
+                <span>주사위 횟수</span>
+
+                <strong>각 3회</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 승부 확률 -->
+
+    <section class="level-card dice-rate-card">
+
+        <div class="dice-section-title">
+
+            <i class="fa-solid fa-chart-simple"></i>
+            주사위 승부 확률
+
+        </div>
+
+        <div class="dice-rate-grid">
+
+            <div class="dice-rate-item win">
+
+                <span>승리</span>
+
+                <strong>40%</strong>
+
+                <small>베팅 금액만큼 획득</small>
+
+            </div>
+
+            <div class="dice-rate-item draw">
+
+                <span>무승부</span>
+
+                <strong>20%</strong>
+
+                <small>다음 승부 방식 선택</small>
+
+            </div>
+
+            <div class="dice-rate-item lose">
+
+                <span>패배</span>
+
+                <strong>40%</strong>
+
+                <small>베팅 금액만큼 차감</small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 무승부 안내 -->
+
+    <section class="level-card dice-draw-card">
+
+        <div class="dice-section-title">
+
+            <i class="fa-solid fa-scale-balanced"></i>
+            무승부가 나오면?
+
+        </div>
+
+        <p class="dice-draw-description">
+
+            나와 미닝봇의 주사위 총합이 같으면
+            즉시 승부가 끝나지 않습니다.
+
+            <strong>베팅금액 그대로 가기</strong>와
+            <strong>묻고 더블로 가기</strong> 중 하나를 선택해
+            주사위를 다시 굴려야 합니다.
+
+        </p>
+
+        <div class="dice-choice-grid">
+
+            <article class="dice-choice-card keep">
+
+                <div class="dice-choice-icon">
+
+                    <i class="fa-solid fa-rotate-right"></i>
+
+                </div>
+
+                <h3>베팅금액 그대로 가기</h3>
+
+                <p>
+                    처음 베팅했던 금액을 그대로 유지한 상태로
+                    미닝봇과 주사위 대결을 다시 진행합니다.
+                </p>
+
+            </article>
+
+
+            <article class="dice-choice-card double">
+
+                <div class="dice-choice-icon">
+
+                    <i class="fa-solid fa-angles-up"></i>
+
+                </div>
+
+                <h3>묻고 더블로 가기</h3>
+
+                <p>
+                    현재 베팅금액에 더 높은 배수를 적용한 뒤
+                    미닝봇과 주사위 대결을 다시 진행합니다.
+                </p>
+
+                <p>
+                    최종 승부 결과에 따라 증가한 금액을
+                    그대로 얻거나 잃게 됩니다.
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <!-- 더블 예시 -->
+
+        <div class="dice-double-example">
+
+            <div class="dice-example-title">
+
+                <i class="fa-solid fa-coins"></i>
+                100만 원으로 시작한 경우
+
+            </div>
+
+            <div class="dice-example-flow">
+
+                <div class="dice-example-step">
+
+                    <span>처음 베팅</span>
+
+                    <strong>100만 원</strong>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <div class="dice-example-step">
+
+                    <span>첫 번째 더블</span>
+
+                    <strong>200만 원</strong>
+
+                    <small>현재 금액 ×2</small>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <div class="dice-example-step">
+
+                    <span>두 번째 더블</span>
+
+                    <strong>800만 원</strong>
+
+                    <small>현재 금액 ×4</small>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <div class="dice-example-step">
+
+                    <span>세 번째 더블</span>
+
+                    <strong>6,400만 원</strong>
+
+                    <small>현재 금액 ×8</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="dice-balance-notice">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <span>
+                묻고 더블로 가기는 현재 잔액이 부족하더라도
+                선택하여 주사위를 굴릴 수 있습니다.
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- 실제 사용 화면 -->
+
+    <section class="level-card dice-preview-card">
+
+        <div class="dice-section-title">
+
+            <i class="fa-solid fa-image"></i>
+            실제 사용 화면
+
+        </div>
+
+        <div class="dice-preview">
+
+            <img
+                src="../../images/dice_preview.png"
+                alt="미닝봇 주사위 명령어 실제 사용 화면"
+            >
+
+        </div>
+
+        <p class="dice-preview-caption">
+            주사위 명령어를 사용하면 굴리기 버튼을 통해 대결을 시작할 수 있습니다.
+        </p>
+
+    </section>
+
+</main>
+
+<script src="../../script.js"></script>
+
+</body>
+
+</html>

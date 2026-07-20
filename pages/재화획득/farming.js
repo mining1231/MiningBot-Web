@@ -13,6 +13,7 @@ const farmingData = {
             { icon: "sansam", name: "산삼 ×1", chance: "0.001%" }
         ]
     },
+
     2: {
         success: "75%",
         fail: "25%",
@@ -27,126 +28,126 @@ const farmingData = {
             { icon: "sansam", name: "산삼 ×1", chance: "0.005%" }
         ]
     },
+
     3: {
-    success: "80%",
-    fail: "20%",
-    exp: "1000",
-    drops: [
-        { icon: "🍑", name: "복숭아 ×1", chance: "15%" },
-        { icon: "🍑", name: "복숭아 ×3", chance: "40%" },
-        { icon: "🍑", name: "복숭아 ×5", chance: "25%" },
-        { icon: "🍓", name: "딸기 ×1", chance: "15.4%" },
-        { icon: "shine", name: "샤인머스켓 ×1", chance: "4.5%" },
-        { icon: "🍎", name: "사과 ×1", chance: "0.09%" },
-        { icon: "sansam", name: "산삼 ×1", chance: "0.01%" }
-    ]
-},
+        success: "80%",
+        fail: "20%",
+        exp: "1000",
+        drops: [
+            { icon: "🍑", name: "복숭아 ×1", chance: "15%" },
+            { icon: "🍑", name: "복숭아 ×3", chance: "40%" },
+            { icon: "🍑", name: "복숭아 ×5", chance: "25%" },
+            { icon: "🍓", name: "딸기 ×1", chance: "15.4%" },
+            { icon: "shine", name: "샤인머스켓 ×1", chance: "4.5%" },
+            { icon: "🍎", name: "사과 ×1", chance: "0.09%" },
+            { icon: "sansam", name: "산삼 ×1", chance: "0.01%" }
+        ]
+    },
 
-4: {
-    success: "85%",
-    fail: "15%",
-    exp: "5000",
-    drops: [
-        { icon: "🍑", name: "복숭아 ×1", chance: "5%" },
-        { icon: "🍑", name: "복숭아 ×3", chance: "15%" },
-        { icon: "🍑", name: "복숭아 ×5", chance: "50%" },
-        { icon: "🍓", name: "딸기 ×1", chance: "19.8%" },
-        { icon: "shine", name: "샤인머스켓 ×1", chance: "10%" },
-        { icon: "🍎", name: "사과 ×1", chance: "0.15%" },
-        { icon: "sansam", name: "산삼 ×1", chance: "0.05%" }
-    ]
-},
+    4: {
+        success: "85%",
+        fail: "15%",
+        exp: "5000",
+        drops: [
+            { icon: "🍑", name: "복숭아 ×1", chance: "5%" },
+            { icon: "🍑", name: "복숭아 ×3", chance: "15%" },
+            { icon: "🍑", name: "복숭아 ×5", chance: "50%" },
+            { icon: "🍓", name: "딸기 ×1", chance: "19.8%" },
+            { icon: "shine", name: "샤인머스켓 ×1", chance: "10%" },
+            { icon: "🍎", name: "사과 ×1", chance: "0.15%" },
+            { icon: "sansam", name: "산삼 ×1", chance: "0.05%" }
+        ]
+    },
 
-5: {
-    success: "90%",
-    fail: "10%",
-    exp: "20000",
-    drops: [
-        { icon: "🍑", name: "복숭아 ×1", chance: "0%" },
-        { icon: "🍑", name: "복숭아 ×3", chance: "1%" },
-        { icon: "🍑", name: "복숭아 ×5", chance: "39%" },
-        { icon: "🍓", name: "딸기 ×1", chance: "39.5%" },
-        { icon: "shine", name: "샤인머스켓 ×1", chance: "20%" },
-        { icon: "🍎", name: "사과 ×1", chance: "0.4%" },
-        { icon: "sansam", name: "산삼 ×1", chance: "0.1%" }
-    ]
-},
+    5: {
+        success: "90%",
+        fail: "10%",
+        exp: "20000",
+        drops: [
+            { icon: "🍑", name: "복숭아 ×1", chance: "0%" },
+            { icon: "🍑", name: "복숭아 ×3", chance: "1%" },
+            { icon: "🍑", name: "복숭아 ×5", chance: "39%" },
+            { icon: "🍓", name: "딸기 ×1", chance: "39.5%" },
+            { icon: "shine", name: "샤인머스켓 ×1", chance: "20%" },
+            { icon: "🍎", name: "사과 ×1", chance: "0.4%" },
+            { icon: "sansam", name: "산삼 ×1", chance: "0.1%" }
+        ]
+    },
 
-6: {
-    success: "100%",
-    fail: "0%",
-    exp: "????",
-    drops: [
-        { icon: "🍑", name: "복숭아 ×1", chance: "0%" },
-        { icon: "🍑", name: "복숭아 ×3", chance: "0%" },
-        { icon: "🍑", name: "복숭아 ×5", chance: "10%" },
-        { icon: "🍓", name: "딸기 ×1", chance: "62%" },
-        { icon: "shine", name: "샤인머스켓 ×1", chance: "25%" },
-        { icon: "🍎", name: "사과 ×1", chance: "2.5%" },
-        { icon: "sansam", name: "산삼 ×1", chance: "0.5%" }
-    ]
-},
+    6: {
+        success: "100%",
+        fail: "0%",
+        exp: "????",
+        drops: [
+            { icon: "🍑", name: "복숭아 ×1", chance: "0%" },
+            { icon: "🍑", name: "복숭아 ×3", chance: "0%" },
+            { icon: "🍑", name: "복숭아 ×5", chance: "10%" },
+            { icon: "🍓", name: "딸기 ×1", chance: "62%" },
+            { icon: "shine", name: "샤인머스켓 ×1", chance: "25%" },
+            { icon: "🍎", name: "사과 ×1", chance: "2.5%" },
+            { icon: "sansam", name: "산삼 ×1", chance: "0.5%" }
+        ]
+    },
 
-7: {
-    success: "100%",
-    fail: "0%",
-    exp: "????",
-    drops: [
-        { icon: "🍑", name: "복숭아 ×1", chance: "0%" },
-        { icon: "🍑", name: "복숭아 ×3", chance: "0%" },
-        { icon: "🍑", name: "복숭아 ×5", chance: "0%" },
-        { icon: "🍓", name: "딸기 ×1", chance: "40%" },
-        { icon: "shine", name: "샤인머스켓 ×1", chance: "50%" },
-        { icon: "🍎", name: "사과 ×1", chance: "9%" },
-        { icon: "sansam", name: "산삼 ×1", chance: "1%" }
-    ]
-},
+    7: {
+        success: "100%",
+        fail: "0%",
+        exp: "????",
+        drops: [
+            { icon: "🍑", name: "복숭아 ×1", chance: "0%" },
+            { icon: "🍑", name: "복숭아 ×3", chance: "0%" },
+            { icon: "🍑", name: "복숭아 ×5", chance: "0%" },
+            { icon: "🍓", name: "딸기 ×1", chance: "40%" },
+            { icon: "shine", name: "샤인머스켓 ×1", chance: "50%" },
+            { icon: "🍎", name: "사과 ×1", chance: "9%" },
+            { icon: "sansam", name: "산삼 ×1", chance: "1%" }
+        ]
+    },
 
-8: {
-    success: "100%",
-    fail: "0%",
-    exp: "????",
-    drops: [
-        { icon: "🍑", name: "복숭아 ×1", chance: "0%" },
-        { icon: "🍑", name: "복숭아 ×3", chance: "0%" },
-        { icon: "🍑", name: "복숭아 ×5", chance: "0%" },
-        { icon: "🍓", name: "딸기 ×1", chance: "10%" },
-        { icon: "shine", name: "샤인머스켓 ×1", chance: "60%" },
-        { icon: "🍎", name: "사과 ×1", chance: "25%" },
-        { icon: "sansam", name: "산삼 ×1", chance: "5%" }
-    ]
-},
+    8: {
+        success: "100%",
+        fail: "0%",
+        exp: "????",
+        drops: [
+            { icon: "🍑", name: "복숭아 ×1", chance: "0%" },
+            { icon: "🍑", name: "복숭아 ×3", chance: "0%" },
+            { icon: "🍑", name: "복숭아 ×5", chance: "0%" },
+            { icon: "🍓", name: "딸기 ×1", chance: "10%" },
+            { icon: "shine", name: "샤인머스켓 ×1", chance: "60%" },
+            { icon: "🍎", name: "사과 ×1", chance: "25%" },
+            { icon: "sansam", name: "산삼 ×1", chance: "5%" }
+        ]
+    },
 
-9: {
-    success: "100%",
-    fail: "0%",
-    exp: "????",
-    drops: [
-        { icon: "🍑", name: "복숭아 ×1", chance: "0%" },
-        { icon: "🍑", name: "복숭아 ×3", chance: "0%" },
-        { icon: "🍑", name: "복숭아 ×5", chance: "0%" },
-        { icon: "🍓", name: "딸기 ×1", chance: "0%" },
-        { icon: "shine", name: "샤인머스켓 ×1", chance: "50%" },
-        { icon: "🍎", name: "사과 ×1", chance: "40%" },
-        { icon: "sansam", name: "산삼 ×1", chance: "10%" }
-    ]
-},
+    9: {
+        success: "100%",
+        fail: "0%",
+        exp: "????",
+        drops: [
+            { icon: "🍑", name: "복숭아 ×1", chance: "0%" },
+            { icon: "🍑", name: "복숭아 ×3", chance: "0%" },
+            { icon: "🍑", name: "복숭아 ×5", chance: "0%" },
+            { icon: "🍓", name: "딸기 ×1", chance: "0%" },
+            { icon: "shine", name: "샤인머스켓 ×1", chance: "50%" },
+            { icon: "🍎", name: "사과 ×1", chance: "40%" },
+            { icon: "sansam", name: "산삼 ×1", chance: "10%" }
+        ]
+    },
 
-10: {
-    success: "100%",
-    fail: "0%",
-    exp: "????",
-    drops: [
-        { icon: "🍑", name: "복숭아 ×1", chance: "0%" },
-        { icon: "🍑", name: "복숭아 ×3", chance: "0%" },
-        { icon: "🍑", name: "복숭아 ×5", chance: "0%" },
-        { icon: "🍓", name: "딸기 ×1", chance: "0%" },
-        { icon: "shine", name: "샤인머스켓 ×1", chance: "0%" },
-        { icon: "🍎", name: "사과 ×1", chance: "60%" },
-        { icon: "sansam", name: "산삼 ×1", chance: "40%" }
-    ]
-}
-
+    10: {
+        success: "100%",
+        fail: "0%",
+        exp: "????",
+        drops: [
+            { icon: "🍑", name: "복숭아 ×1", chance: "0%" },
+            { icon: "🍑", name: "복숭아 ×3", chance: "0%" },
+            { icon: "🍑", name: "복숭아 ×5", chance: "0%" },
+            { icon: "🍓", name: "딸기 ×1", chance: "0%" },
+            { icon: "shine", name: "샤인머스켓 ×1", chance: "0%" },
+            { icon: "🍎", name: "사과 ×1", chance: "60%" },
+            { icon: "sansam", name: "산삼 ×1", chance: "40%" }
+        ]
+    }
 };
 
 const successRate = document.getElementById("successRate");
@@ -172,7 +173,12 @@ function loadLevel(level) {
 
     const data = farmingData[level];
 
-    levelTitle.textContent = `🌱 Lv.${level}`;
+    if (!data) return;
+
+    levelTitle.innerHTML = `
+        <i class="fa-solid fa-seedling"></i>
+        Lv.${level}
+    `;
 
     successRate.textContent = data.success;
     failRate.textContent = data.fail;
@@ -196,26 +202,26 @@ function loadLevel(level) {
 
             </div>
         `;
-
     });
-
 }
+
 const buttons = document.querySelectorAll(".level-btn");
 
 buttons.forEach(button => {
 
     button.addEventListener("click", () => {
 
-        buttons.forEach(btn => btn.classList.remove("active"));
+        buttons.forEach(btn => {
+            btn.classList.remove("active");
+        });
 
         button.classList.add("active");
 
         loadLevel(button.dataset.level);
-
     });
-
 });
 
-buttons[0].classList.add("active");
-
-loadLevel(1);
+if (buttons.length > 0) {
+    buttons[0].classList.add("active");
+    loadLevel(1);
+}

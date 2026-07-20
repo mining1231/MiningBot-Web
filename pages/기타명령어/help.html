@@ -2,11 +2,9 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>무기판매</title>
+    <title>도움말</title>
 
     <link rel="stylesheet" href="../../style.css">
 
@@ -36,9 +34,10 @@
 
     </a>
 
-    <h1>무기판매</h1>
+    <h1>도움말</h1>
 
 </header>
+
 <nav id="sidebar">
 
     <ul>
@@ -244,197 +243,188 @@
 
 <div id="overlay"></div>
 
-<main class="page-content weapon-sale-page">
+<main class="page-content help-page">
 
-    <!-- 소개 -->
+    <section class="intro help-intro">
 
-    <section class="intro weapon-sale-intro">
-
-        <h2>무기판매란?</h2>
+        <h2>도움말이란?</h2>
 
         <p>
-            <code>/무기판매</code> 명령어를 통해
-            현재 보유 중인 무기를 판매하고 재화를 획득할 수 있습니다.
+            <code>/도움말</code> 명령어를 통해
+            미닝봇 이용에 필요한 주요 정보를 간단하게 확인할 수 있습니다.
         </p>
 
         <p>
-            무기 레벨이 높을수록 판매 금액도 크게 증가합니다.
-            단, 판매한 무기는 되돌릴 수 없으므로
-            현재 무기와 판매 금액을 반드시 확인한 뒤 결정해 주세요.
+            홈페이지와 튜토리얼을 통해 각 콘텐츠의 자세한 이용 방법을
+            살펴볼 수 있으며, 이용 중 문의사항이나 오류가 있다면
+            서포트 서버를 이용해 주세요.
         </p>
 
-        <div class="weapon-sale-summary-grid">
+    </section>
 
-            <div class="weapon-sale-summary-card">
+    <section class="level-card help-preview-card">
 
-                <span>판매 가능 조건</span>
+        <div class="help-section-title">
 
-                <strong>무기 Lv.2 이상</strong>
+            <i class="fa-solid fa-image"></i>
 
-            </div>
-
-            <div class="weapon-sale-summary-card">
-
-                <span>판매 제한</span>
-
-                <strong>Lv.1 판매 불가</strong>
-
-            </div>
+            실제 사용 화면
 
         </div>
 
-        <div class="weapon-sale-warning">
+        <div class="help-preview">
 
-            <i class="fa-solid fa-triangle-exclamation"></i>
+            <img
+                src="../../images/help_preview.png"
+                alt="미닝봇 도움말 명령어 사용 화면"
+            >
 
-            <span>
-                무기를 판매하면 현재 무기를 잃게 됩니다.
-                판매 전 무기 단계와 금액을 신중하게 확인해 주세요.
-            </span>
+            <p class="preview-caption">
+                실제 미닝봇 도움말 명령어 사용 화면입니다.
+            </p>
 
         </div>
 
     </section>
 
-    <!-- 단계별 판매 금액 -->
+    <section class="level-card help-info-card">
 
-    <section class="level-card weapon-sale-card">
+        <div class="help-section-title">
 
-        <div class="weapon-sale-section-title">
+            <i class="fa-solid fa-circle-info"></i>
 
-            <i class="fa-solid fa-sack-dollar"></i>
-
-            단계별 무기 판매 금액
+            이용 안내
 
         </div>
 
-        <div class="weapon-sale-range-buttons">
+        <div class="help-info-grid">
 
-            <button class="weapon-sale-range-btn active"
-                    data-start="1"
-                    data-end="10">
+            <div class="help-info-item">
 
-                1강 ~ 10강
+                <div class="help-info-icon homepage">
 
-            </button>
-
-            <button class="weapon-sale-range-btn"
-                    data-start="11"
-                    data-end="20">
-
-                11강 ~ 20강
-
-            </button>
-
-            <button class="weapon-sale-range-btn"
-                    data-start="21"
-                    data-end="30">
-
-                21강 ~ 30강
-
-            </button>
-
-            <button class="weapon-sale-range-btn"
-                    data-start="31"
-                    data-end="40">
-
-                31강 ~ 40강
-
-            </button>
-
-            <button class="weapon-sale-range-btn"
-                    data-start="41"
-                    data-end="50">
-
-                41강 ~ 50강
-
-            </button>
-
-        </div>
-
-        <div class="weapon-sale-select-box">
-
-            <label for="weaponSaleLevel">
-
-                <i class="fa-solid fa-list"></i>
-
-                무기 단계 선택
-
-            </label>
-
-            <select id="weaponSaleLevel"></select>
-
-        </div>
-
-        <article class="weapon-sale-result-card">
-
-            <div class="weapon-sale-heading">
-
-                <div class="weapon-sale-icon">
-
-                    <i class="fa-solid fa-hammer"></i>
+                    <i class="fa-solid fa-house"></i>
 
                 </div>
 
-                <div>
+                <h3>홈페이지</h3>
 
-                    <span id="weaponSaleLevelLabel">
-                        Lv.1
-                    </span>
+                <p>
+                    미닝봇의 명령어와 시스템 정보를
+                    자세하게 확인할 수 있습니다.
+                </p>
 
-                    <h2 id="weaponSaleName">
-                        나뭇가지
-                    </h2>
+            </div>
+
+            <div class="help-info-item">
+
+                <div class="help-info-icon tutorial">
+
+                    <i class="fa-solid fa-book-open"></i>
 
                 </div>
 
-            </div>
+                <h3>튜토리얼</h3>
 
-            <div id="weaponSaleHiddenNotice"
-                 class="weapon-sale-hidden-notice">
-
-                <i class="fa-solid fa-lock"></i>
-
-                <span>
-                    최종 무기의 이름은 추후 공개될 예정입니다.
-                </span>
+                <p>
+                    처음 시작하는 유저를 위한
+                    기본 이용 방법을 확인할 수 있습니다.
+                </p>
 
             </div>
 
-            <div class="weapon-sale-price-box">
+            <div class="help-info-item">
 
-                <span>
+                <div class="help-info-icon support">
 
-                    <i class="fa-solid fa-coins"></i>
+                    <i class="fa-solid fa-comments"></i>
 
-                    판매 금액
+                </div>
 
-                </span>
+                <h3>서포트 서버</h3>
 
-                <strong id="weaponSalePrice">
-                    판매 불가
-                </strong>
-
-            </div>
-
-            <div id="weaponSaleUnavailable"
-                 class="weapon-sale-unavailable show">
-
-                <i class="fa-solid fa-circle-xmark"></i>
-
-                <span>
-                    Lv.1 나뭇가지는 판매할 수 없습니다.
-                </span>
+                <p>
+                    문의사항이나 오류가 있다면
+                    서포트 서버에서 도움을 요청할 수 있습니다.
+                </p>
 
             </div>
 
-        </article>
+        </div>
+
+    </section>
+
+    <section class="level-card help-command-card">
+
+        <div class="help-section-title">
+
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            주요 명령어
+
+        </div>
+
+        <p class="help-command-description">
+            도움말에서 안내하는 미닝봇의 주요 명령어입니다.
+        </p>
+
+        <div class="help-command-list">
+
+            <div class="help-command-item">
+
+                <code>/정보</code>
+
+                <span>내 정보와 현재 진행 상태를 확인합니다.</span>
+
+            </div>
+
+            <div class="help-command-item">
+
+                <code>/농사</code>
+
+                <span>농사를 진행하고 다양한 작물을 수확합니다.</span>
+
+            </div>
+
+            <div class="help-command-item">
+
+                <code>/카페</code>
+
+                <span>카페를 운영해 재화를 획득합니다.</span>
+
+            </div>
+
+            <div class="help-command-item">
+
+                <code>/탐험</code>
+
+                <span>탐험을 진행해 특별한 아이템을 찾아봅니다.</span>
+
+            </div>
+
+            <div class="help-command-item">
+
+                <code>/가방</code>
+
+                <span>보유 중인 아이템과 쿠폰을 확인하고 사용합니다.</span>
+
+            </div>
+
+            <div class="help-command-item">
+
+                <code>/순위</code>
+
+                <span>미닝봇 유저들의 다양한 순위를 확인합니다.</span>
+
+            </div>
+
+        </div>
 
     </section>
 
 </main>
+
 <script src="../../script.js"></script>
-<script src="weapon-sale.js"></script>
 
 </body>
 </html>

@@ -81,7 +81,10 @@ const cafeButtons = document.querySelectorAll(".level-btn");
 function loadCafeLevel(level) {
     const data = cafeData[level];
 
-    cafeLevelTitle.textContent = `☕ Lv.${level}`;
+    levelTitle.innerHTML = `
+    <i class="fa-solid fa-mug-hot"></i>
+    Lv.${level}
+`;
 
     cafeSuccessRate.textContent = data.success;
     cafeFailRate.textContent = data.fail;
