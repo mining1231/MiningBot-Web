@@ -9458,3 +9458,396 @@ body:has(.explore-card) .intro h2{
     }
 
 }
+/* ==========================
+   전리품 상점 페이지
+========================== */
+
+
+/* 상단 요약 카드 */
+
+.lootshop-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
+    margin-top: 27px;
+}
+
+.lootshop-summary-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    min-width: 0;
+    min-height: 130px;
+    padding: 20px 14px;
+
+    border: 1px solid #f3d8e2;
+    border-radius: 18px;
+
+    background: #fff8fb;
+    text-align: center;
+}
+
+.lootshop-summary-card > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 14px;
+
+    background: #ffeaf2;
+    color: #c56d92;
+
+    font-size: 21px;
+}
+
+.lootshop-summary-card > img {
+    display: block;
+
+    width: 44px;
+    height: 44px;
+
+    object-fit: contain;
+}
+
+.lootshop-summary-card span {
+    color: #88767c;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.lootshop-summary-card strong {
+    max-width: 100%;
+
+    color: #c56d92;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* 상품 목록 전체 카드 */
+
+.lootshop-card {
+    margin-top: 28px;
+}
+
+.lootshop-section-title {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-bottom: 21px;
+
+    color: #c56d92;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.lootshop-section-title i {
+    width: 25px;
+
+    text-align: center;
+}
+
+
+/* 상품 카드 배치 */
+
+.lootshop-product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.lootshop-product-card {
+    display: flex;
+    align-items: stretch;
+    gap: 17px;
+
+    min-width: 0;
+    padding: 21px;
+
+    border: 1px solid #f3d8e2;
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow: 0 8px 24px rgba(255, 170, 200, 0.11);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.lootshop-product-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 28px rgba(255, 170, 200, 0.18);
+}
+
+
+/* 상품 아이콘 */
+
+.lootshop-product-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 66px;
+    height: 66px;
+
+    border-radius: 17px;
+
+    background: #fff4f8;
+}
+
+.lootshop-product-icon > img {
+    display: block;
+
+    width: 44px;
+    height: 44px;
+
+    object-fit: contain;
+}
+
+
+/* 파산 신청서 단색 아이콘 */
+
+.lootshop-product-icon.font-icon {
+    color: #c56d92;
+
+    font-size: 27px;
+}
+
+
+/* 상품 설명 */
+
+.lootshop-product-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+.lootshop-product-content h3 {
+    margin: 1px 0 9px;
+
+    color: #5a4037;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.lootshop-product-content p {
+    flex: 1;
+
+    margin: 0 0 16px;
+
+    color: #83767a;
+
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* 교환 수량 및 가격 */
+
+.lootshop-product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    padding-top: 13px;
+
+    border-top: 1px solid #f5e2e9;
+}
+
+.lootshop-product-bottom > span {
+    color: #92848a;
+
+    font-size: 13px;
+}
+
+.lootshop-product-bottom > strong {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    flex-shrink: 0;
+
+    color: #476991;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.lootshop-product-bottom strong img {
+    display: block;
+
+    width: 23px;
+    height: 23px;
+
+    object-fit: contain;
+}
+
+
+/* 하단 안내 상자 */
+
+.lootshop-notice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 21px;
+    padding: 16px 18px;
+
+    border: 1px solid #d8dfed;
+    border-radius: 14px;
+
+    background: #f7f9fd;
+    color: #586b82;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.lootshop-notice i {
+    flex-shrink: 0;
+
+    color: #476991;
+
+    font-size: 17px;
+}
+
+
+/* ==========================
+   전리품 상점 모바일
+========================== */
+
+@media (max-width: 768px) {
+
+    .lootshop-summary-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+
+        margin-top: 22px;
+    }
+
+    .lootshop-summary-card {
+        min-height: 105px;
+        padding: 17px;
+    }
+
+    .lootshop-summary-card > i {
+        width: 43px;
+        height: 43px;
+
+        font-size: 19px;
+    }
+
+    .lootshop-summary-card > img {
+        width: 41px;
+        height: 41px;
+    }
+
+    .lootshop-section-title {
+        font-size: 19px;
+    }
+
+    .lootshop-product-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .lootshop-product-card {
+        gap: 14px;
+
+        padding: 18px;
+    }
+
+    .lootshop-product-icon {
+        width: 57px;
+        height: 57px;
+    }
+
+    .lootshop-product-icon > img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .lootshop-product-icon.font-icon {
+        font-size: 23px;
+    }
+
+    .lootshop-product-content h3 {
+        font-size: 17px;
+    }
+
+    .lootshop-product-content p {
+        font-size: 13px;
+    }
+
+    .lootshop-product-bottom {
+        gap: 8px;
+    }
+
+    .lootshop-product-bottom > strong {
+        font-size: 15px;
+    }
+
+    .lootshop-product-bottom strong img {
+        width: 21px;
+        height: 21px;
+    }
+
+    .lootshop-notice {
+        align-items: flex-start;
+
+        padding: 15px 16px;
+
+        font-size: 13px;
+    }
+
+}
+
+
+/* 아주 작은 모바일 화면 */
+
+@media (max-width: 420px) {
+
+    .lootshop-product-card {
+        align-items: flex-start;
+    }
+
+    .lootshop-product-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .lootshop-product-icon > img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .lootshop-product-content h3 {
+        font-size: 16px;
+    }
+
+    .lootshop-product-bottom {
+        align-items: flex-end;
+    }
+
+}
