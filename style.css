@@ -1398,113 +1398,332 @@ body:has(.explore-card) .intro h2{
    전리품 페이지
 ========================== */
 
-.loot-list{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
+.loot-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
 
-    gap:18px;
+    margin-bottom: 30px;
 }
 
-.loot-card{
-    display:flex;
-    align-items:center;
+.loot-summary-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
 
-    gap:18px;
+    min-height: 145px;
+    padding: 22px;
 
-    background:#ffffff;
+    border: 1px solid #f3d8e2;
+    border-radius: 20px;
 
-    border:1px solid #f3d8e2;
+    background: #ffffff;
 
-    border-radius:20px;
-
-    padding:22px;
-
-    box-shadow:0 8px 24px rgba(255,170,200,.12);
-
-    transition:all .25s ease;
+    box-shadow: 0 8px 24px rgba(255, 170, 200, 0.12);
+    text-align: center;
 }
 
-.loot-card:hover{
-    transform:translateY(-3px);
+.loot-summary-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    box-shadow:0 12px 28px rgba(255,170,200,.18);
+    width: 52px;
+    height: 52px;
+
+    margin-bottom: 3px;
+
+    border-radius: 15px;
+
+    background: #fff3f7;
+    color: #c56d92;
+
+    font-size: 23px;
 }
 
-.loot-icon-box{
-    width:64px;
-    height:64px;
+.loot-summary-icon img {
+    width: 39px;
+    height: 39px;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    flex-shrink:0;
-    background:#fff7fa;
-
-    border-radius:16px;
+    object-fit: contain;
 }
 
-.loot-icon-box img{
-    width:42px;
-    height:42px;
+.loot-summary-card span {
+    color: #7e7075;
 
-    object-fit:contain;
+    font-size: 15px;
+    font-weight: 600;
 }
 
-.loot-content{
-    width:100%;
+.loot-summary-card strong {
+    color: #c56d92;
+
+    font-size: 28px;
+    font-weight: 700;
 }
 
-.loot-content h3{
-    margin:0 0 14px;
-
-    color:#5a4037;
-
-    font-size:20px;
-    font-weight:700;
+.loot-summary-card.piece {
+    border-color: #d8dfed;
+    background: #fafcff;
 }
 
-.loot-info{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-    gap:16px;
-
-    margin-top:8px;
+.loot-summary-card.piece .loot-summary-icon {
+    background: #edf2fa;
 }
 
-.loot-info span{
-    color:#888;
-
-    font-size:14px;
+.loot-summary-card.piece strong {
+    color: #476991;
 }
 
-.loot-info strong{
-    color:#c56d92;
 
-    font-size:16px;
-    font-weight:700;
+/* 전리품 구역 */
+
+.loot-section {
+    margin-top: 30px;
 }
 
-@media(max-width:768px){
+.loot-section-title {
+    display: flex;
+    align-items: center;
+    gap: 9px;
 
-    .loot-list{
-        grid-template-columns:1fr;
+    margin-bottom: 17px;
+
+    color: #c56d92;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.loot-section-title i {
+    width: 24px;
+
+    text-align: center;
+}
+
+.loot-section-title img {
+    width: 27px;
+    height: 27px;
+
+    object-fit: contain;
+}
+
+
+/* 전리품 카드 목록 */
+
+.loot-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.loot-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 22px;
+
+    border: 1px solid #f3d8e2;
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow: 0 8px 24px rgba(255, 170, 200, 0.12);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.loot-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 28px rgba(255, 170, 200, 0.18);
+}
+
+.loot-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 64px;
+    height: 64px;
+
+    border-radius: 16px;
+
+    background: #fff7fa;
+}
+
+.loot-icon-box img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+}
+
+.loot-content {
+    width: 100%;
+    min-width: 0;
+}
+
+.loot-content h3 {
+    margin: 0 0 14px;
+
+    color: #5a4037;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.loot-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    margin-top: 8px;
+}
+
+.loot-info span {
+    color: #888;
+
+    font-size: 14px;
+}
+
+.loot-info strong {
+    color: #c56d92;
+
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+}
+
+
+.loot-piece-section {
+    margin-top: 34px;
+}
+
+.loot-piece-section .loot-section-title {
+    color: #476991;
+}
+
+.loot-piece-card {
+    border-color: #d8dfed;
+    background: #fbfcff;
+
+    box-shadow: 0 8px 24px rgba(62, 91, 128, 0.1);
+}
+
+.loot-piece-card:hover {
+    box-shadow: 0 12px 28px rgba(62, 91, 128, 0.16);
+}
+
+.loot-piece-card .loot-icon-box {
+    background: #edf2fa;
+}
+
+.loot-piece-card .loot-info strong {
+    color: #476991;
+}
+
+
+/* 전리품 상점 안내 */
+
+.loot-shop-notice {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    margin-top: 20px;
+    padding: 17px 19px;
+
+    border: 1px solid #d8dfed;
+    border-radius: 15px;
+
+    background: #f7f9fd;
+    color: #56687d;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.loot-shop-notice i {
+    flex-shrink: 0;
+
+    color: #476991;
+
+    font-size: 18px;
+}
+/* ==========================
+   전리품 모바일
+========================== */
+
+@media (max-width: 768px) {
+
+    .loot-summary-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
     }
 
-    .loot-card{
-        padding:18px;
+    .loot-summary-card {
+        min-height: 120px;
+        padding: 19px;
     }
 
-    .loot-icon-box{
-        width:56px;
-        height:56px;
+    .loot-summary-card strong {
+        font-size: 25px;
     }
 
-    .loot-icon-box img{
-        width:36px;
-        height:36px;
+    .loot-section-title {
+        font-size: 19px;
+    }
+
+    .loot-list {
+        grid-template-columns: 1fr;
+    }
+
+    .loot-card {
+        gap: 15px;
+
+        padding: 18px;
+    }
+
+    .loot-icon-box {
+        width: 56px;
+        height: 56px;
+    }
+
+    .loot-icon-box img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .loot-content h3 {
+        font-size: 18px;
+    }
+
+    .loot-info {
+        gap: 10px;
+    }
+
+    .loot-info span {
+        font-size: 13px;
+    }
+
+    .loot-info strong {
+        font-size: 15px;
+    }
+
+    .loot-shop-notice {
+        align-items: flex-start;
+
+        padding: 15px 16px;
+
+        font-size: 14px;
     }
 
 }
@@ -8302,7 +8521,6 @@ body:has(.explore-card) .intro h2{
     text-align:right;
 }
 
-
 /* 미닝세 채널 설정 */
 
 .tax-channel-description{
@@ -8409,8 +8627,6 @@ body:has(.explore-card) .intro h2{
     font-family:"Paperlogy", sans-serif;
     font-weight:700;
 }
-
-
 /* 관리자 안내 */
 
 .tax-admin-notice{
@@ -8504,9 +8720,6 @@ body:has(.explore-card) .intro h2{
     color:#c56d92;
 }
 
-
-/* 도움말 공통 카드 */
-
 .help-preview-card,
 .help-info-card,
 .help-command-card{
@@ -8521,7 +8734,6 @@ body:has(.explore-card) .intro h2{
 
     box-shadow:0 10px 30px rgba(197,109,146,.12);
 }
-
 
 /* 도움말 카드 제목 */
 
@@ -8547,7 +8759,6 @@ body:has(.explore-card) .intro h2{
 
     font-size:25px;
 }
-
 
 /* 실제 사용 화면 */
 
@@ -8578,7 +8789,6 @@ body:has(.explore-card) .intro h2{
 
     font-size:13px;
 }
-
 
 /* 이용 안내 카드 */
 
@@ -8659,7 +8869,6 @@ body:has(.explore-card) .intro h2{
     line-height:1.7;
 }
 
-
 /* 주요 명령어 */
 
 .help-command-description{
@@ -8722,7 +8931,6 @@ body:has(.explore-card) .intro h2{
     line-height:1.6;
 }
 
-
 /* 도움말 페이지 모바일 */
 
 @media(max-width:768px){
@@ -8758,7 +8966,6 @@ body:has(.explore-card) .intro h2{
     }
 
 }
-
 /* 매우 작은 모바일 화면 */
 
 @media(max-width:420px){
@@ -8825,10 +9032,6 @@ body:has(.explore-card) .intro h2{
 /* ==========================
    주사위
 ========================== */
-
-
-/* 소개 요약 정보 */
-
 .dice-summary-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -8868,7 +9071,6 @@ body:has(.explore-card) .intro h2{
     font-weight: 700;
 }
 
-
 /* 공통 섹션 제목 */
 
 .dice-section-title {
@@ -8888,7 +9090,6 @@ body:has(.explore-card) .intro h2{
     width: 24px;
     text-align: center;
 }
-
 
 /* 승부 확률 */
 
@@ -8932,7 +9133,6 @@ body:has(.explore-card) .intro h2{
     line-height: 1.5;
 }
 
-
 /* 승리 */
 
 .dice-rate-item.win {
@@ -8944,7 +9144,6 @@ body:has(.explore-card) .intro h2{
 .dice-rate-item.win strong {
     color: #58a772;
 }
-
 
 /* 무승부 */
 
@@ -8958,7 +9157,6 @@ body:has(.explore-card) .intro h2{
     color: #c8953c;
 }
 
-
 /* 패배 */
 
 .dice-rate-item.lose {
@@ -8970,7 +9168,6 @@ body:has(.explore-card) .intro h2{
 .dice-rate-item.lose strong {
     color: #ce6575;
 }
-
 
 /* 무승부 설명 */
 
@@ -8986,7 +9183,6 @@ body:has(.explore-card) .intro h2{
 .dice-draw-description strong {
     color: #d96b92;
 }
-
 
 /* 무승부 선택 카드 */
 

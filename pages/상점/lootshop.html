@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>전리품 상점</title>
+
+    <link rel="stylesheet" href="../../style.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="page-header">
+
+    <button id="menuBtn"
+            class="page-menu-btn"
+            type="button">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+    <a href="../../index.html"
+       class="home-btn">
+
+        <i class="fa-solid fa-house"></i>
+
+    </a>
+
+    <h1>전리품 상점</h1>
+
+</header>
+
+<nav id="sidebar">
+
+    <ul>
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+                <i class="fa-solid fa-coins"></i>
+                재화획득
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/재화획득/farming.html">농사</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/cafe.html">카페</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/explore.html">탐험</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/lottery.html">복권</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/loot.html">전리품</a>
+                </li>
+
+                <li>
+                    <a href="/pages/재화획득/checkin.html">출석체크</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+                <i class="fa-solid fa-dice"></i>
+                도박
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/도박/fishing.html">낚시</a>
+                </li>
+
+                <li>
+                    <a href="/pages/도박/pubg.html">배그</a>
+                </li>
+
+                <li>
+                    <a href="/pages/도박/lotto.html">로또</a>
+                </li>
+
+                <li>
+                    <a href="/pages/도박/rps.html">가위바위보</a>
+                </li>
+
+                <li>
+                    <a href="/pages/도박/dice.html">주사위</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+                <i class="fa-solid fa-hammer"></i>
+                강화
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/강화/upgrade.html">강화 확률</a>
+                </li>
+
+                <li>
+                    <a href="/pages/강화/attack.html">공격</a>
+                </li>
+
+                <li>
+                    <a href="/pages/강화/weapon-sale.html">무기판매</a>
+                </li>
+
+                <li>
+                    <a href="/pages/강화/engraving.html">별의 각인</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+                <i class="fa-solid fa-paw"></i>
+                펫
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/펫/summon.html">펫 뽑기</a>
+                </li>
+
+                <li>
+                    <a href="/pages/펫/petLevel.html">펫 레벨업</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+                <i class="fa-solid fa-cart-shopping"></i>
+                상점
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/상점/shop.html">상점</a>
+                </li>
+
+                <li>
+                    <a href="/pages/상점/petshop.html">펫 상점</a>
+                </li>
+
+                <li>
+                    <a href="/pages/상점/lootshop.html">전리품 상점</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+                <i class="fa-solid fa-briefcase"></i>
+                가방
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/가방/mysterybox.html">물음표박스</a>
+                </li>
+
+                <li>
+                    <a href="/pages/가방/items.html">기타 아이템</a>
+                </li>
+
+                <li>
+                    <a href="/pages/가방/bundle.html">밍꾸러미</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li class="menu-item">
+
+            <div class="menu-title">
+                <i class="fa-solid fa-puzzle-piece"></i>
+                기타 명령어
+            </div>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="/pages/기타명령어/help.html">도움말</a>
+                </li>
+
+                <li>
+                    <a href="/pages/기타명령어/bankruptcy.html">파산신청</a>
+                </li>
+
+                <li>
+                    <a href="/pages/기타명령어/exp.html">경험치</a>
+                </li>
+
+                <li>
+                    <a href="/pages/기타명령어/mining-tax.html">미닝세</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+    </ul>
+
+</nav>
+
+<div id="overlay"></div>
+
+<main class="page-content lootshop-page">
+
+    <section class="intro lootshop-intro">
+
+        <h2>전리품 상점이란?</h2>
+
+        <p>
+            <code>/전리품상점</code>에서 모아둔
+            <strong>전리품조각</strong>을 다양한 아이템으로 교환해 보세요.
+        </p>
+
+        <p>
+            전리품조각은 <code>/전리품</code> 이용 시
+            일정 확률로 획득할 수 있으며,
+            조각을 충분히 모으면 원하는 아이템을 직접 선택하여 교환할 수 있습니다.
+        </p>
+
+        <p>
+            필요한 아이템을 확인하고
+            전리품조각을 차곡차곡 모아보세요! 🧩
+        </p>
+
+        <div class="lootshop-summary-grid">
+
+            <div class="lootshop-summary-card">
+
+                <i class="fa-solid fa-store"></i>
+
+                <span>이용 명령어</span>
+
+                <strong>/전리품상점</strong>
+
+            </div>
+
+            <div class="lootshop-summary-card">
+
+                <img src="../../images/loot_piece.png"
+                     alt="전리품조각">
+
+                <span>필요 재료</span>
+
+                <strong>전리품조각</strong>
+
+            </div>
+
+            <div class="lootshop-summary-card">
+
+                <i class="fa-solid fa-gift"></i>
+
+                <span>조각 획득 방법</span>
+
+                <strong>/전리품</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="level-card lootshop-card">
+
+        <div class="lootshop-section-title">
+
+            <i class="fa-solid fa-basket-shopping"></i>
+
+            교환 가능한 아이템
+
+        </div>
+
+        <div class="lootshop-product-grid">
+
+            <!-- 파산 신청서 -->
+
+            <article class="lootshop-product-card">
+
+                <div class="lootshop-product-icon font-icon">
+
+                    <i class="fa-solid fa-file-signature"></i>
+
+                </div>
+
+                <div class="lootshop-product-content">
+
+                    <h3>파산 신청서</h3>
+
+                    <p>파산 신청에 사용할 수 있는 아이템입니다.</p>
+
+                    <div class="lootshop-product-bottom">
+
+                        <span>1개 교환</span>
+
+                        <strong>
+
+                            <img src="../../images/loot_piece.png"
+                                 alt="전리품조각">
+
+                            5개
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- 수리석 -->
+
+            <article class="lootshop-product-card">
+
+                <div class="lootshop-product-icon">
+
+                    <img src="../../images/repair_stone.png"
+                         alt="수리석">
+
+                </div>
+
+                <div class="lootshop-product-content">
+
+                    <h3>수리석</h3>
+
+                    <p>무기의 내구도를 회복할 수 있는 아이템입니다.</p>
+
+                    <div class="lootshop-product-bottom">
+
+                        <span>1개 교환</span>
+
+                        <strong>
+
+                            <img src="../../images/loot_piece.png"
+                                 alt="전리품조각">
+
+                            10개
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- 송금 랜덤 쿠폰 -->
+
+            <article class="lootshop-product-card">
+
+                <div class="lootshop-product-icon">
+
+                    <img src="../../images/transfer_random_coupon.png"
+                         alt="송금 랜덤 쿠폰">
+
+                </div>
+
+                <div class="lootshop-product-content">
+
+                    <h3>송금 랜덤 쿠폰</h3>
+
+                    <p>송금 가능 횟수를 무작위로 변경하는 쿠폰입니다.</p>
+
+                    <div class="lootshop-product-bottom">
+
+                        <span>1개 교환</span>
+
+                        <strong>
+
+                            <img src="../../images/loot_piece.png"
+                                 alt="전리품조각">
+
+                            15개
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- 송금 더블 쿠폰 -->
+
+            <article class="lootshop-product-card">
+
+                <div class="lootshop-product-icon">
+
+                    <img src="../../images/transfer_double_coupon.png"
+                         alt="송금 더블 쿠폰">
+
+                </div>
+
+                <div class="lootshop-product-content">
+
+                    <h3>송금 더블 쿠폰</h3>
+
+                    <p>현재 송금 가능 횟수를 2배로 증가시키는 쿠폰입니다.</p>
+
+                    <div class="lootshop-product-bottom">
+
+                        <span>1개 교환</span>
+
+                        <strong>
+
+                            <img src="../../images/loot_piece.png"
+                                 alt="전리품조각">
+
+                            15개
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- 송금 초기화 쿠폰 -->
+
+            <article class="lootshop-product-card">
+
+                <div class="lootshop-product-icon">
+
+                    <img src="../../images/송금초기화쿠폰.png"
+                         alt="송금 초기화 쿠폰">
+
+                </div>
+
+                <div class="lootshop-product-content">
+
+                    <h3>송금 초기화 쿠폰</h3>
+
+                    <p>송금 가능 횟수를 10회로 초기화하는 쿠폰입니다.</p>
+
+                    <div class="lootshop-product-bottom">
+
+                        <span>1개 교환</span>
+
+                        <strong>
+
+                            <img src="../../images/loot_piece.png"
+                                 alt="전리품조각">
+
+                            15개
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- 빚 청산 쿠폰 -->
+
+            <article class="lootshop-product-card">
+
+                <div class="lootshop-product-icon">
+
+                    <img src="../../images/빚청산쿠폰.png"
+                         alt="빚 청산 쿠폰">
+
+                </div>
+
+                <div class="lootshop-product-content">
+
+                    <h3>빚 청산 쿠폰</h3>
+
+                    <p>현재 보유 중인 빚을 전액 청산하는 쿠폰입니다.</p>
+
+                    <div class="lootshop-product-bottom">
+
+                        <span>1개 교환</span>
+
+                        <strong>
+
+                            <img src="../../images/loot_piece.png"
+                                 alt="전리품조각">
+
+                            20개
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="lootshop-notice">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <span>
+                아이템을 교환하려면 상품에 표시된 수량만큼
+                전리품조각을 보유하고 있어야 합니다.
+            </span>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../../script.js"></script>
+
+</body>
+</html>

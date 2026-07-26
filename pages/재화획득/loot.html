@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>전리품</title>
 
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet"
+          href="../../style.css">
 
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css">
 
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body>
@@ -37,6 +43,8 @@
     <h1>전리품</h1>
 
 </header>
+
+
 <nav id="sidebar">
 
     <ul>
@@ -44,8 +52,10 @@
         <li class="menu-item">
 
             <div class="menu-title">
+
                 <i class="fa-solid fa-coins"></i>
                 재화획득
+
             </div>
 
             <ul class="submenu">
@@ -78,11 +88,14 @@
 
         </li>
 
+
         <li class="menu-item">
 
             <div class="menu-title">
+
                 <i class="fa-solid fa-dice"></i>
                 도박
+
             </div>
 
             <ul class="submenu">
@@ -111,11 +124,14 @@
 
         </li>
 
+
         <li class="menu-item">
 
             <div class="menu-title">
+
                 <i class="fa-solid fa-hammer"></i>
                 강화
+
             </div>
 
             <ul class="submenu">
@@ -140,11 +156,14 @@
 
         </li>
 
+
         <li class="menu-item">
 
             <div class="menu-title">
+
                 <i class="fa-solid fa-paw"></i>
                 펫
+
             </div>
 
             <ul class="submenu">
@@ -161,11 +180,14 @@
 
         </li>
 
+
         <li class="menu-item">
 
             <div class="menu-title">
+
                 <i class="fa-solid fa-cart-shopping"></i>
                 상점
+
             </div>
 
             <ul class="submenu">
@@ -178,15 +200,22 @@
                     <a href="/pages/상점/petshop.html">펫 상점</a>
                 </li>
 
+                <li>
+                    <a href="/pages/상점/lootshop.html">전리품 상점</a>
+                </li>
+
             </ul>
 
         </li>
 
+
         <li class="menu-item">
 
             <div class="menu-title">
+
                 <i class="fa-solid fa-briefcase"></i>
                 가방
+
             </div>
 
             <ul class="submenu">
@@ -207,11 +236,14 @@
 
         </li>
 
+
         <li class="menu-item">
 
             <div class="menu-title">
+
                 <i class="fa-solid fa-puzzle-piece"></i>
                 기타 명령어
+
             </div>
 
             <ul class="submenu">
@@ -240,135 +272,322 @@
 
 </nav>
 
+
 <div id="overlay"></div>
 
-<main class="page-content">
 
-    <section class="intro">
+<main class="page-content loot-page">
+
+    <!-- 전리품 소개 -->
+
+    <section class="intro loot-intro">
 
         <h2>전리품이란?</h2>
 
         <p>
-            <code>/전리품</code> 명령어를 통해 다양한 등급의 전리품을 획득해 보세요.
+            <code>/전리품</code> 명령어를 통해
+            다양한 등급의 전리품 또는
+            <strong>전리품조각</strong>을 획득해 보세요.
         </p>
 
         <p>
-            어떤 전리품이 나올지는 오직 운에 달려 있습니다.
-            높은 등급의 전리품일수록 등장 확률은 낮지만, 더 큰 보상을 획득할 수 있습니다. 🎁
+            전리품이 등장하면 등급에 따라 일정 금액을 획득하며,
+            높은 등급일수록 등장 확률은 낮지만
+            더 많은 재화를 받을 수 있습니다.
+        </p>
+
+        <p>
+            전리품조각은 한 번에 <strong>1개 또는 2개</strong>를 획득할 수 있으며,
+            모은 조각은 <strong>전리품 상점에서 다양한 아이템과 교환</strong>할 수 있습니다. 🧩
         </p>
 
         <ul>
-            <li> 쿨타임 3시간</li>
-            <li> 전리품 등급에 따라 보상이 달라집니다.</li>
+
+            <li>쿨타임 1시간</li>
+
+            <li>돈 획득 확률 70%</li>
+
+            <li>전리품조각 획득 확률 30%</li>
+
         </ul>
 
     </section>
 
-    <section class="loot-list">
 
-        <article class="loot-card">
+    <!-- 종류별 확률 요약 -->
 
-            <div class="loot-icon-box">
-                <img src="../../images/low_loot.png"
-                     alt="하급 전리품">
-            </div>
+    <section class="loot-summary-grid">
 
-            <div class="loot-content">
+        <div class="loot-summary-card money">
 
-                <h3>하급 전리품</h3>
+            <div class="loot-summary-icon">
 
-                <div class="loot-info">
-                    <span>등장 확률</span>
-                    <strong>34%</strong>
-                </div>
-
-                <div class="loot-info">
-                    <span>획득 보상</span>
-                    <strong>500,000원</strong>
-                </div>
+                <i class="fa-solid fa-coins"></i>
 
             </div>
 
-        </article>
+            <span>돈 획득 확률</span>
 
-        <article class="loot-card">
+            <strong>60%</strong>
 
-            <div class="loot-icon-box">
-                <img src="../../images/middle_loot.png"
-                     alt="중급 전리품">
-            </div>
+        </div>
 
-            <div class="loot-content">
 
-                <h3>중급 전리품</h3>
+        <div class="loot-summary-card piece">
 
-                <div class="loot-info">
-                    <span>등장 확률</span>
-                    <strong>50%</strong>
-                </div>
+            <div class="loot-summary-icon">
 
-                <div class="loot-info">
-                    <span>획득 보상</span>
-                    <strong>2,000,000원</strong>
-                </div>
+                <img src="../../images/loot_piece.png"
+                     alt="전리품조각">
 
             </div>
 
-        </article>
+            <span>전리품조각 획득 확률</span>
 
-        <article class="loot-card">
+            <strong>40%</strong>
 
-            <div class="loot-icon-box">
-                <img src="../../images/high_loot.png"
-                     alt="상급 전리품">
-            </div>
+        </div>
 
-            <div class="loot-content">
+    </section>
 
-                <h3>상급 전리품</h3>
 
-                <div class="loot-info">
-                    <span>등장 확률</span>
-                    <strong>15%</strong>
+    <!-- 돈 전리품 -->
+
+    <section class="loot-section">
+
+        <div class="loot-section-title">
+
+            <i class="fa-solid fa-coins"></i>
+            등급별 전리품
+
+        </div>
+
+        <div class="loot-list">
+
+            <article class="loot-card">
+
+                <div class="loot-icon-box">
+
+                    <img src="../../images/low_loot.png"
+                         alt="하급 전리품">
+
                 </div>
 
-                <div class="loot-info">
-                    <span>획득 보상</span>
-                    <strong>5,000,000원</strong>
+                <div class="loot-content">
+
+                    <h3>하급 전리품</h3>
+
+                    <div class="loot-info">
+
+                        <span>등장 확률</span>
+
+                        <strong>30%</strong>
+
+                    </div>
+
+                    <div class="loot-info">
+
+                        <span>획득 보상</span>
+
+                        <strong>100,000원</strong>
+
+                    </div>
+
                 </div>
 
-            </div>
+            </article>
 
-        </article>
+            <article class="loot-card">
 
-        <article class="loot-card">
+                <div class="loot-icon-box">
 
-            <div class="loot-icon-box">
-                <img src="../../images/top_loot.png"
-                     alt="최상급 전리품">
-            </div>
+                    <img src="../../images/middle_loot.png"
+                         alt="중급 전리품">
 
-            <div class="loot-content">
-
-                <h3>최상급 전리품</h3>
-
-                <div class="loot-info">
-                    <span>등장 확률</span>
-                    <strong>1%</strong>
                 </div>
 
-                <div class="loot-info">
-                    <span>획득 보상</span>
-                    <strong>10,000,000원</strong>
+                <div class="loot-content">
+
+                    <h3>중급 전리품</h3>
+
+                    <div class="loot-info">
+
+                        <span>등장 확률</span>
+
+                        <strong>25%</strong>
+
+                    </div>
+
+                    <div class="loot-info">
+
+                        <span>획득 보상</span>
+
+                        <strong>500,000원</strong>
+
+                    </div>
+
                 </div>
 
-            </div>
+            </article>
 
-        </article>
+            <article class="loot-card">
+
+                <div class="loot-icon-box">
+
+                    <img src="../../images/high_loot.png"
+                         alt="상급 전리품">
+
+                </div>
+
+                <div class="loot-content">
+
+                    <h3>상급 전리품</h3>
+
+                    <div class="loot-info">
+
+                        <span>등장 확률</span>
+
+                        <strong>10%</strong>
+
+                    </div>
+
+                    <div class="loot-info">
+
+                        <span>획득 보상</span>
+
+                        <strong>1,000,000원</strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="loot-card">
+
+                <div class="loot-icon-box">
+
+                    <img src="../../images/top_loot.png"
+                         alt="최상급 전리품">
+
+                </div>
+
+                <div class="loot-content">
+
+                    <h3>최상급 전리품</h3>
+
+                    <div class="loot-info">
+
+                        <span>등장 확률</span>
+
+                        <strong>5%</strong>
+
+                    </div>
+
+                    <div class="loot-info">
+
+                        <span>획득 보상</span>
+
+                        <strong>2,000,000원</strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- 전리품조각 -->
+
+    <section class="loot-section loot-piece-section">
+
+        <div class="loot-section-title">
+
+            <img src="../../images/loot_piece.png"
+                 alt="전리품조각">
+
+            전리품조각
+
+        </div>
+
+        <div class="loot-list loot-piece-list">
+
+<!-- 전리품조각 1개 -->
+
+<article class="loot-card loot-piece-card">
+
+    <div class="loot-icon-box">
+
+        <img src="../../images/loot_piece.png"
+             alt="전리품조각 1개">
+
+    </div>
+
+    <div class="loot-content">
+
+        <h3>전리품조각 ×1</h3>
+
+        <div class="loot-info">
+
+            <span>등장 확률</span>
+
+            <strong>22%</strong>
+
+        </div>
+
+    </div>
+
+</article>
+
+<article class="loot-card loot-piece-card">
+
+    <div class="loot-icon-box">
+
+        <img src="../../images/loot_piece.png"
+             alt="전리품조각 2개">
+
+    </div>
+
+    <div class="loot-content">
+
+        <h3>전리품조각 ×2</h3>
+
+        <div class="loot-info">
+
+            <span>등장 확률</span>
+
+            <strong>8%</strong>
+
+        </div>
+
+    </div>
+
+</article>
+        </div>
+
+
+        <div class="loot-shop-notice">
+
+            <i class="fa-solid fa-store"></i>
+
+            <span>
+                전리품조각은 전리품 상점에서
+                다양한 아이템과 교환할 수 있습니다.
+            </span>
+
+        </div>
 
     </section>
 
 </main>
+
+
 <script src="../../script.js"></script>
+
 </body>
+
 </html>
